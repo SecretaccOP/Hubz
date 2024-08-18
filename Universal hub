@@ -7089,20 +7089,6 @@ AnimationsTab:AddButton({
   	end    
 })
 
-local CommunityTab = Window:MakeTab({
-	Name = "Community",
-	Icon = "nil",
-	PremiumOnly = false
-})
-
-local CommunitySection = CommunityTab:AddSection({
-	Name = "Creators"
-})
-
-CommunityTab:AddParagraph("Creators of this GUI","Thank you so much for using my GUI, the owner / creator of this GUI is NEMOSIST, website designer is Itzmat. Join our Discord server! https://discord.gg/K9UgmEaAmZ")
-
-
-
 local MiscTab = Window:MakeTab({
 	Name = "Player Tab",
 	Icon = "nil",
