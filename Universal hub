@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Nezzo FE - ScriptHub | V1.4", HidePremium = false, IntroText = ("Nezzo Hub"), SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Malay - ScriptHub | V4", HidePremium = false, IntroText = ("Malay Hub"), SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local WelcomeTab = Window:MakeTab({
 	Name = "Welcome",
@@ -8,10 +8,10 @@ local WelcomeTab = Window:MakeTab({
 })
 
 local WelcomeSection = WelcomeTab:AddSection({
-	Name = "Hey there!"
+	Name = "Hi there!"
 })
 
-WelcomeTab:AddParagraph("Welcome!","Hey there, my name is Nemosist |owner of this gui|, thank you got using my GUI, there are loads of different scripts in here to mess about with.Im sure you will have a good time using them")
+WelcomeTab:AddParagraph("Welcome!","Hey there, my name is REYVINGS |owner of this gui|, thank you got using my HUB, there are loads of different scripts in here to mess about with.Im sure you will have a good time using them")
 
 
 local HubsAndGUISTab = Window:MakeTab({
@@ -7125,7 +7125,7 @@ CommunityTab:AddParagraph("Creators of this GUI","Thank you so much for using my
 
 
 local MiscTab = Window:MakeTab({
-	Name = "Misc Tab",
+	Name = "Player Tab",
 	Icon = "nil",
 	PremiumOnly = false
 })
@@ -7134,16 +7134,12 @@ local MiscSection = MiscTab:AddSection({
 	Name = "Local Player"
 })
 
-MiscTab:AddSlider({
+MiscTab:AddTextbox({
 	Name = "Walkspeed",
-	Min = 0,
-	Max = 500,
-	Default = 0,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
+	Default = "1-200",
 	ValueName = "Walkspeed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	Callback = function(Text)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
 	end    
 })
 
@@ -7162,32 +7158,3 @@ MiscTab:AddButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
-
-local OldGuiTab = Window:MakeTab({
-	Name = "My Old GUIS",
-	Icon = "nil",
-	PremiumOnly = false
-})
-
-local OldGuiSection = OldGuiTab:AddSection({
-	Name = "Old Name"
-})
-
-OldGuiTab:AddParagraph("Did you know?","Did you know that the name of this GUI before was called Dexin")
-
-OldGuiTab:AddButton({
-	Name = "Old Dexin GUI | The first",
-	Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/8m0yxGXU'))()
-  	end    
-})
-
-OldGuiTab:AddButton({
-	Name = "2nd Dexin GUI | The Latest",
-	Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/XSzfnP62'))()
-  	end    
-})
-
-
-
