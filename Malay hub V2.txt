@@ -8,7 +8,7 @@ local colors = {
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Malay hub V2", colors)
+local Window = Library.CreateLib("Malay hub V4", colors)
 
 local GameId = game.PlaceId
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(GameId).Name
