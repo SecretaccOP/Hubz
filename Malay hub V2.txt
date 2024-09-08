@@ -681,24 +681,6 @@ loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
 print("Clicked")
 end)
 
-local Tab = Window:NewTab("script hubs")
-local Section = Tab:NewSection("Hubs")
-
-Section:NewButton("hub 1", "ButtonInfo", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Davicoderliner/davigui/main/Daviguiv2loader.lua"),true))()
-print("Clicked")
-end)
-
-Section:NewButton("hub 2", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/mDxvKtZe"))()
-print("Clicked")
-end)
-
-Section:NewButton("hub 3", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH/MoonUI-v13-102-SCRIPTS/main/MoonUI%20v13!"))()
-print("Clicked")
-end)
-
 local Tab = Window:NewTab("Admin Scripts")
 local Section = Tab:NewSection("Admin scripts")
 
@@ -736,24 +718,10 @@ local Section = Tab:NewSection("Discord name:scriptx")
 Tab:NewSection("Hope you enjoy ðŸ˜Š")
 Tab:NewSection("And no one help me to do (>︿<｡)")
 
-local Tab = Window:MakeTab({
-	Name = "Showcare [Only on YouTube]",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:NewSection({
-	Name = "if you showcare My Script. I will write your name here"
-})
-
-local Section = Tab:NewSection({
-	Name = "Showcare: He flash"
-})
-
-local Section = Tab:NewSection({
-	Name = "Showcare: Denim_blox"
-})
-
+local Tab = Window:NewTab("Showcase")
+Tab:NewSection("if you showcare My Script. I will write your name here")
+Tab:NewSection("Showcase: He flash")
+Tab:NewSection("Showcase: Denim_blox")
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "Script Executed";
@@ -802,7 +770,7 @@ local UIGradient_2 = Instance.new("UIGradient")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 
-ChadWaterMark.Name = "Malay hub V2"
+ChadWaterMark.Name = "Malay hub V4"
 ChadWaterMark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ChadWaterMark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ChadWaterMark.ResetOnSpawn = false
@@ -842,7 +810,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(-0.000772226602, 0, 0.67410934, 0)
 TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "V2"
+TextLabel_2.Text = "V4"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 270, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 24
