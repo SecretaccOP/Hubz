@@ -716,6 +716,57 @@ loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
 print("Clicked")
 end)
 
+local Tab1 = window:NewTab("Hub")
+local Tab1Section = Tab1:NewSection("i know my hub is not good")
+
+Tab1Section:NewButton("GHUBV14","LikeAndSubscribe",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/GHUBV14XZ/main/Ghub_Main_Loader.txt"))()
+end)
+
+Tab1Section:NewButton("Silent Exploit","Description",function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SilentExpl/Loader-Source-/main/SilentExploit.md'))()
+end)
+
+Tab1Section:NewButton("Ez Hub","Description",function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+Tab1Section:NewButton("Moon v13","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH/MoonUI-v13-102-SCRIPTS/main/MoonUI%20v13!"))()
+end)
+
+Tab1Section:NewButton("GhostHub","Description",function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+Tab1Section:NewButton("The Hub v1","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hassantheking123321/Everybody/main/My%20hub"))();
+end)
+
+Tab1Section:NewButton("FE GAMES HUB","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))()
+end)
+
+Tab1Section:NewButton("Rochips","Description",function()
+        loadstring(game:HttpGet(('https://pastefy.app/yumu499O/raw'),true))()
+end)
+
+Tab1Section:NewButton("Deluxe Hub","Description",function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/dApTQQ51'),true))()
+end)
+
+Tab1Section:NewButton("Sky Hub","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))()
+end)
+
+Tab1Section:NewButton("Blizzard Hub V2","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/uaahjajajqoqiqkqhwhwhw/Blizzard-Hub-Official/main/Blizzard%20Hub%20V2.lua", true))()
+end)
+
+Tab1Section:NewButton("Multi-Scripter-X","Description",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+end)
+
 local Tab = Window:NewTab("Admin Scripts")
 local Section = Tab:NewSection("Admin scripts")
 
