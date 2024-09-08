@@ -1,0 +1,855 @@
+local colors = {
+    SchemeColor = Color3.fromRGB(255, 255, 0),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(255, 0, 0),
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Malay hub V2", colors)
+
+local GameId = game.PlaceId
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(GameId).Name
+
+local plrs = game:GetService("Players")
+local plr = plrs.LocalPlayer
+local plrname = plr.Name
+local plrid = plr.UserId
+local plrchr = plr.Character
+local plrage = plr.AccountAge
+local plrcount = #plrs:GetPlayers()
+
+-- Home
+local Tab = Window:NewTab("Home")
+local Section1 = Tab:NewSection("Welcome: " .. plrname .. " To: Malay hub")
+local Section2 = Tab:NewSection("Game Name: " .. GameName)
+local Section3 = Tab:NewSection("Game Id: " .. GameId)
+local Section4 = Tab:NewSection("Name: " .. plrname)
+local Section5 = Tab:NewSection("Display Name: " .. plr.DisplayName)
+local Section6 = Tab:NewSection("Player Id: " .. plrid)
+local Section7 = Tab:NewSection("Account Age: " .. plrage)
+
+local Tab = Window:NewTab("Player Things")
+local Section = Tab:NewSection("Useful Stuff")
+
+Section:NewButton("Universal Fly", "ButtonInfo", function()
+    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+    print("Clicked")
+end)
+
+Section:NewButton("Keyboard", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Infinite Jumps", "ButtonInfo", function()
+    local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:Connect(function()
+        if InfiniteJumpEnabled then
+            game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+        end
+    end)
+    print("Clicked")
+end)
+
+Section:NewSlider("Walkspeed", "Changes how fast you walk.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue) 
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s 
+
+end)
+
+Section:NewSlider("JumpPower", "Changes how fast you jump.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue) 
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = s 
+
+end)
+
+Section:NewToggle("Fov", "Changes The Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Section:NewButton("ESP", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Guest-max/idk/main/code?token=GHSAT0AAAAAACETJWRGYEVCEX2WT3WSSICIZFTZWAQ"))()
+print("Clicked")
+end)
+
+Section:NewButton("Universal AimBot", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+print("Clicked")
+end)
+
+Section:NewButton("ShiftLock for mobile", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))()
+print("Clicked")
+end)
+
+Section:NewButton("Esp [OP]", "ButtonInfo", function()
+loadstring(game:HttpGet("https://rentry.co/projektembuspandang/raw"))();
+print("Clicked")
+end)
+
+local Tab = Window:NewTab("Fe scripts")
+local Section = Tab:NewSection("Fe scripts")
+
+Section:NewButton("Crawl script", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_vZDX8j5ggfAf58QhdJ59BVEmF6nmZgq4Mcjt2l8wn16CiStIW2P6EkNc605qv9K4.lua.txt'))()
+print("Clicked")
+end)
+
+Section:NewButton("Fe Animation-Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+print("Clicked")
+end)
+
+Section:NewButton("Fe Zombie script", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
+print("Clicked")
+end)
+
+Section:NewButton("Fe Fps counter", "ButtonInfo", function()
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.Position = UDim2.new(0.894944727, 0, 0.952606618, 0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL.TextWrapped = true
+LBL.Visible = true
+
+local FpsLabel = LBL
+local Heartbeat = game:GetService("RunService").Heartbeat
+local LastIteration, Start
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+	LastIteration = tick()
+	for Index = #FrameUpdateTable, 1, -1 do
+		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+	end
+	FrameUpdateTable[1] = LastIteration
+	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+	CurrentFPS = CurrentFPS - CurrentFPS % 1
+	FpsLabel.Text = "" .. CurrentFPS .. " FPS"
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)
+print("Clicked")
+end)
+
+Section:NewButton("Fe Spider script", "ButtonInfo", function()
+--BROUGHT TO YOU BY RSCRIPTS.NET--
+
+
+
+
+setsimulationradius(math.huge, math.huge)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+game.Players.LocalPlayer.Character.Archivable = true
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+local clonec =  game.Players.LocalPlayer.Character:Clone()
+clonec.Parent = workspace
+clonec.Name = "POOCLONE"
+clonec.Humanoid.HipHeight = -1.2 -- change this to look taller.
+game.Players.LocalPlayer.Character = clonec
+clonec.Animate.Disabled = false
+
+workspace.Camera.CameraSubject = clonec.Humanoid
+game.Players.LocalPlayer.Character = workspace[game.Players.LocalPlayer.Name]
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+---game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+game.Players.LocalPlayer.Character.Humanoid.Animator:Destroy()
+
+spawn(function()
+
+
+while true do
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+clonec.Humanoid.Jump = game.Players.LocalPlayer.Character.Humanoid.Jump
+
+local veco = workspace.Camera.CFrame:VectorToObjectSpace(game.Players.LocalPlayer.Character.Humanoid.MoveDirection)
+clonec.Humanoid:Move(veco, true)
+
+end
+wait()
+end
+
+end)
+
+for i,v in pairs(clonec:GetDescendants())do 
+    
+    if v:IsA("Part") then 
+    v.Transparency = 1
+    end 
+end 
+
+
+
+
+
+local bodyvelocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character["HumanoidRootPart"])
+bodyvelocity.MaxForce = Vector3.new(9.9999999805064e+18, 9.999999869911e+14, 9.999999869911e+14)
+bodyvelocity.Velocity = Vector3.new(0, 0, 0)
+game:GetService("RunService").Stepped:connect(function()
+    
+    game.Players.LocalPlayer.Character.Torso.CanCollide = false 
+    game.Players.LocalPlayer.Character.Head.CanCollide = false 
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false 
+       game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true  
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = (clonec.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-90),0,0)) * CFrame.new(0,-0,-1)
+           game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+ game.Players.LocalPlayer.Character.HumanoidRootPart.RotVelocity = Vector3.new(0,0,0)
+ 
+end)
+
+
+
+
+local segments = Instance.new("Folder")
+local part = Instance.new("Part")
+local part_2 = Instance.new("Part")
+
+segments.Name = "segments"
+segments.Parent = workspace
+part.Anchored = true
+part.CanCollide = false
+part.Transparency = 1
+part.Size = Vector3.new(1, 1, 2)
+part.BottomSurface = Enum.SurfaceType.Smooth
+part.BrickColor = BrickColor.new("Alder")
+part.TopSurface = Enum.SurfaceType.Smooth
+part.Color = Color3.new(0.666667, 0.333333, 1)
+part.Parent = segments
+part.Name = "seg1"
+part.CFrame = CFrame.new(-4.1, 2.1, -37.5)
+part_2.Anchored = true
+part_2.CanCollide = false
+part_2.Size = Vector3.new(1, 1, 2)
+part_2.BottomSurface = Enum.SurfaceType.Smooth
+part_2.BrickColor = BrickColor.new("Cool yellow")
+part_2.TopSurface = Enum.SurfaceType.Smooth
+part_2.Color = Color3.new(0.992157, 0.917647, 0.552941)
+part_2.Parent = segments
+part_2.CFrame = CFrame.new(-4.1, 2.1, -37.5)
+part_2.Name = "seg2"
+part_2.Transparency = 1
+
+local segments2 = Instance.new("Folder")
+local part = Instance.new("Part")
+local part_2 = Instance.new("Part")
+
+segments2.Name = "segments2"
+segments2.Parent = workspace
+part.Anchored = true
+part.CanCollide = false
+part.Size = Vector3.new(1, 1, 2)
+part.BottomSurface = Enum.SurfaceType.Smooth
+part.BrickColor = BrickColor.new("Alder")
+part.TopSurface = Enum.SurfaceType.Smooth
+part.Name = "seg1"
+part.Color = Color3.new(0.666667, 0.333333, 1)
+part.Parent = segments2
+part.CFrame = CFrame.new(-4.1, 2.1, -37.5)
+part_2.Anchored = true
+part_2.CanCollide = false
+part_2.Size = Vector3.new(1, 1, 2)
+part_2.BottomSurface = Enum.SurfaceType.Smooth
+part_2.BrickColor = BrickColor.new("Alder")
+part_2.TopSurface = Enum.SurfaceType.Smooth
+part_2.Color = Color3.new(0.666667, 0.333333, 1)
+part_2.Parent = segments2
+part_2.CFrame = CFrame.new(-4.1, 2.1, -37.5)
+part_2.Name = "seg2"
+part_2.Transparency = 1
+part.Transparency = 1
+
+
+
+local leg1 = Instance.new("Part")
+leg1.Anchored = true
+leg1.Size = Vector3.new(0.5, 0.2, 0.5)
+leg1.BottomSurface = Enum.SurfaceType.Smooth
+leg1.Color = Color3.new(0, 1, 0)
+leg1.BrickColor = BrickColor.new("New Yeller")
+leg1.TopSurface = Enum.SurfaceType.Smooth
+leg1.Name = "leg1"
+leg1.Parent = workspace
+leg1.CFrame = CFrame.new(-31.15, 0.1, 8.65)
+leg1.CanCollide = false
+leg1.Transparency = 1
+
+
+
+
+
+local leg1 =workspace.leg1:Clone()
+leg1.Parent = workspace
+
+local leg2= workspace.leg1:Clone()
+leg2.Parent = workspace
+
+local lp = game.Players.LocalPlayer
+local head = game.Players.LocalPlayer.Character.Head
+
+function coffset(x,y,z)
+	return (head.CFrame * CFrame.new(x,y,z)).Position
+end
+
+
+
+
+mouse.KeyDown:connect(function(k)
+	
+	if k == "z" then
+		
+		leg1.Position = mouse.Hit.Position
+	elseif k == "x" then
+		
+		
+		leg2.Position = mouse.Hit.Position
+	end
+	
+end)
+
+	
+
+		
+spawn(function()
+--
+while true do
+	
+	
+if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude >0.1 then
+		wait(1.6/lp.Character.Humanoid.WalkSpeed)
+		
+	local ray1 =Ray.new(coffset(3,-0,0),Vector3.new(0,-10,0) )
+	local hit,pos = workspace:FindPartOnRayWithIgnoreList(ray1,{leg1,leg2,lp.Character})
+	if pos then
+		leg1.Position = pos
+		end
+		
+
+	
+		wait(1.6/lp.Character.Humanoid.WalkSpeed)
+	local ray2 =Ray.new(coffset(-3,-0,0),Vector3.new(0,-10,0) )
+	local hit,pos = workspace:FindPartOnRayWithIgnoreList(ray2,{leg1,leg2,lp.Character})
+	if pos then
+	leg2.Position = pos	
+		end
+	
+	end
+	game:GetService("RunService").RenderStepped:wait()
+end
+
+end)
+
+
+  
+
+spawn(function()
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+
+
+local len  = 2
+
+local offset = Vector3.new(1,-3,0)
+	
+	local offset = Vector3.new(1,-1,0)
+	
+local segs = {}
+
+local posn =  game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-2.5,0)
+
+
+
+
+
+
+for i,v in pairs(workspace.segments:GetChildren()) do
+	
+	
+	
+	table.insert(segs,v)
+	
+	
+end
+
+
+
+
+
+
+function vectorabsy(vec)
+	local v = Vector3.new(vec.X,math.abs(vec.Y),vec.Z)
+	return v
+end
+
+
+local count = #segs
+
+
+while true do
+	
+	for i = 1,5 do
+		
+	for i = 1,count do
+		
+		if i == 1 then
+			
+			local seg = segs[i]
+			
+			local pos1 = 	segs[i].Position - (segs[i].CFrame.LookVector* (len/2) )  -- Calculating position that is on back of the part
+			local pos2 =leg1.Position
+			local vec = (pos2 - pos1).Unit 
+			
+			local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) 
+			
+			seg.CFrame = cframe
+			
+		else
+				local seg = segs[i]
+			local pos1 = 	segs[i].Position - (segs[i].CFrame.LookVector* (len/2) )
+			local pos2 = 	segs[i-1].Position - (segs[i-1].CFrame.LookVector* (len/2) )
+			local vec = (pos2 - pos1).Unit
+				local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) 
+			
+			seg.CFrame = cframe
+		end
+
+	end	
+	
+	--Back
+
+	
+		for i = 1,count do
+		
+		local i = ( count - i ) + 1
+		if i == count then
+			
+			local seg = segs[i]
+			
+			local pos1 = 	segs[i].Position + (segs[i].CFrame.LookVector* (len/2) )  -- Calculating position that is on back of the part
+			local pos2 =(game.Players.LocalPlayer.Character.Head.CFrame * CFrame.new(offset)).Position  
+			local vec =(pos2 - pos1).Unit 
+			if vec.Y > 0 then
+				
+			vec = Vector3.new(vec.X, vec.Y-0.01 ,vec.Z)	
+				
+			end
+			
+			local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) * CFrame.Angles(0,math.rad(-180),0) 
+			
+			seg.CFrame =cframe
+			
+		else
+				local seg = segs[i]
+			local pos1 = 	segs[i].Position + (segs[i].CFrame.LookVector* (len/2) )
+			
+			local pos2 = 	segs[i+1].Position + (segs[i+1].CFrame.LookVector* (len/2) )
+			local vec = (pos2 - pos1).Unit 
+			
+				local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2)  * CFrame.Angles(0,math.rad(-180),0)
+			
+			seg.CFrame = cframe
+		end
+
+		end	
+		
+	end
+	game:GetService("RunService").Heartbeat:wait()
+end
+	
+end)
+
+
+
+
+spawn(function()
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+
+
+local len  = 2
+
+local offset = Vector3.new(-1,-1,0)
+
+local segs = {}
+
+local posn =  game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-2.5,0)
+
+
+
+
+
+
+for i,v in pairs(workspace.segments2:GetChildren()) do
+	
+	
+
+	table.insert(segs,v)
+	
+	
+end
+
+
+
+
+
+function vectorabsy(vec)
+	local v = Vector3.new(vec.X,math.abs(vec.Y),vec.Z)
+	return v
+end
+
+
+local count = #segs
+
+
+while true do
+
+	for i = 1,5 do
+		
+	for i = 1,count do
+		
+		if i == 1 then
+			
+			local seg = segs[i]
+			
+			local pos1 = 	segs[i].Position - (segs[i].CFrame.LookVector* (len/2) )  -- Calculating position that is on back of the part
+			local pos2 =leg2.Position
+			local vec = (pos2 - pos1).Unit 
+		
+			local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) 
+			
+			seg.CFrame = cframe
+			
+		else
+				local seg = segs[i]
+			local pos1 = 	segs[i].Position - (segs[i].CFrame.LookVector* (len/2) )
+			local pos2 = 	segs[i-1].Position - (segs[i-1].CFrame.LookVector* (len/2) )
+			local vec = (pos2 - pos1).Unit
+				local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) 
+			
+			seg.CFrame = cframe
+		end
+
+	end	
+	
+	--Back
+
+	
+		for i = 1,count do
+		
+		local i = ( count - i ) + 1
+		if i == count then
+			
+			local seg = segs[i]
+			
+			local pos1 = 	segs[i].Position + (segs[i].CFrame.LookVector* (len/2) )  -- Calculating position that is on back of the part
+			local pos2 =(game.Players.LocalPlayer.Character.Head.CFrame * CFrame.new(offset)).Position  
+			local vec =(pos2 - pos1).Unit 
+			if vec.Y > 0 then
+				
+			vec = Vector3.new(vec.X, vec.Y-0.01 ,vec.Z)	
+				
+			end
+			
+			local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2) * CFrame.Angles(0,math.rad(-180),0) 
+			
+			seg.CFrame =cframe
+			
+		else
+				local seg = segs[i]
+			local pos1 = 	segs[i].Position + (segs[i].CFrame.LookVector* (len/2) )
+			
+			local pos2 = 	segs[i+1].Position + (segs[i+1].CFrame.LookVector* (len/2) )
+			local vec = (pos2 - pos1).Unit 
+			
+				local cframe = CFrame.new(pos2 - (vec*(len/2) ),pos2)  * CFrame.Angles(0,math.rad(-180),0)
+			
+			seg.CFrame = cframe
+		end
+
+		end	
+		
+	end
+	game:GetService("RunService").Heartbeat:wait()
+end
+	
+end)
+
+
+game.Players.LocalPlayer.Character.Torso["Right Shoulder"]:Destroy()
+game.Players.LocalPlayer.Character.Torso["Left Shoulder"]:Destroy()
+game.Players.LocalPlayer.Character.Torso["Right Hip"]:Destroy()
+game.Players.LocalPlayer.Character.Torso["Left Hip"]:Destroy()
+
+
+	
+local bodyvelocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character["Right Arm"])
+bodyvelocity.MaxForce = Vector3.new(9.9999999805064e+18, 9.999999869911e+14, 9.999999869911e+14)
+bodyvelocity.Velocity = Vector3.new(0, 200, 0)
+
+local bodyvelocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character["Left Arm"])
+bodyvelocity.MaxForce = Vector3.new(9.9999999805064e+18, 9.999999869911e+14, 9.999999869911e+14)
+bodyvelocity.Velocity = Vector3.new(0, 200, 0)
+
+local bodyvelocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character["Left Leg"])
+bodyvelocity.MaxForce = Vector3.new(9.9999999805064e+18, 9.999999869911e+14, 9.999999869911e+14)
+bodyvelocity.Velocity = Vector3.new(0, 200, 0)
+
+local bodyvelocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character["Right Leg"])
+bodyvelocity.MaxForce = Vector3.new(9.9999999805064e+18, 9.999999869911e+14, 9.999999869911e+14)
+bodyvelocity.Velocity = Vector3.new(0, 200, 0)
+
+spawn(function()
+	
+
+	game.Players.LocalPlayer.Character.Humanoid.Died:connect(function()
+		
+		segments:Destroy()
+		segments2:Destroy()
+		
+	end)
+	
+	game:GetService("RunService").Stepped:connect(function()
+	  	game.Players.LocalPlayer.Character["Right Arm"].CanCollide = false
+	game.Players.LocalPlayer.Character["Left Arm"].CanCollide = false
+		
+	 game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+	game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+
+	   end)
+	
+	repeat game:GetService("RunService").Heartbeat:wait()
+		
+	game.Players.LocalPlayer.Character["Right Arm"].CFrame = 	segments.seg1 .CFrame * CFrame.Angles(math.rad(90),0,0 )
+	game.Players.LocalPlayer.Character["Left Arm"].CFrame = 	segments.seg2.CFrame * CFrame.Angles(math.rad(90),0,0 )
+		
+	 game.Players.LocalPlayer.Character["Right Leg"].CFrame = 	segments2.seg1.CFrame * CFrame.Angles(math.rad(90),0,0 )
+	game.Players.LocalPlayer.Character["Left Leg"].CFrame = 	segments2.seg2.CFrame * CFrame.Angles(math.rad(90),0,0 )
+	
+	until game.Players.LocalPlayer.Character.Humanoid.Health  < 1
+
+		
+		
+		
+	
+	
+end)
+
+--thisisascript
+print("Clicked")
+end)
+
+Section:NewButton("Fe Nameless admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+print("Clicked")
+end)
+
+Section:NewButton("Headless and korblox [client sited]", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
+print("Clicked")
+end)
+
+local Tab = Window:NewTab("script hubs")
+local Section = Tab:NewSection("Hubs")
+
+Section:NewButton("hub 1", "ButtonInfo", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Davicoderliner/davigui/main/Daviguiv2loader.lua"),true))()
+print("Clicked")
+end)
+
+Section:NewButton("hub 2", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mDxvKtZe"))()
+print("Clicked")
+end)
+
+Section:NewButton("hub 3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH/MoonUI-v13-102-SCRIPTS/main/MoonUI%20v13!"))()
+print("Clicked")
+end)
+
+local Tab = Window:NewTab("Admin Scripts")
+local Section = Tab:NewSection("Admin scripts")
+
+Section:NewButton("infinite yield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+print("Clicked")
+end)
+
+Section:NewButton(" Nameless admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+print("Clicked")
+end)
+
+Section:NewButton("Fate's admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+print("Clicked")
+end)
+
+Section:NewButton("CMD-X admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+print("Clicked")
+end)
+
+Section:NewButton("Leg admin", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+print("Clicked")
+end)
+
+local Tab = Window:NewTab("executor") local Section = Tab:NewSection("Need help? Contact @REYVINGS") Section:NewButton("Krnl remake", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/wtfplayer/redemption/main/krnlnoui.lua"))() print("Clicked") end)Section:NewButton("Nathan's Executor", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Makeruwu/Scfipg/main/Executor2%2C3'))() print("Clicked") end)Section:NewButton("Arecus x V3", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))() print("Clicked") end)Section:NewButton("Synapse X", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))() print("Clicked") end)Section:NewButton("Delta", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/hGw25z4b"))() print("Clicked") end)Section:NewButton("Fluxus", "ButtonInfo", function()loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fluxus-Coral-Remake-7112"))() print("Clicked") end)Section:NewButton("FireX", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/TKWaG51N"))() print("Clicked") end)Section:NewButton("InternalUI", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/qFGjVeV2"))() print("Clicked") end)Section:NewButton("Chat exe", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))() print("Clicked") end)Section:NewButton("Random Executor", "ButtonInfo", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_vcF6Up06l3XNi03R03cs485X2258584Y7q00OfB2Ug69E69Qk4pYYyIN309f1402.lua.txt'),true))() print("Clicked") end)Section:NewButton("Synapse V2", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))() print("Clicked") end)Section:NewButton("Backdoor executor", "ButtonInfo", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))() print("Clicked") end)local Section = Tab:NewSection("Random scripts")Section:NewButton("Fe minic script", "ButtonInfo", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe./8fb5ed20fb168d1ae3044ede45b90f67e3fb37a2/file'),true))() print("Clicked") end)Section:NewButton("Fe freeze script", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))() print("Clicked") end)Section:NewButton("Time stop NOT FE!", "ButtonInfo", function()loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))() print("Clicked") end)Section:NewButton("Alysse hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/AlysseAndroid/main/loader.lua"))() print("Clicked") end)Section:NewButton("Invisible tool", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/uUtRsAX5"))() print("Clicked") end)Section:NewButton("Inf yield", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() print("Clicked") end)Section:NewButton("Fe bypass", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Enes5858/Enes5858/main/SKIDDDDD.txt"))() print("Clicked") end)Section:NewButton("First person", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/kid5Ncr5"))() print("Clicked") end)Section:NewButton("Moblie keyboard", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))() print("Clicked") end)Section:NewButton("Rtx shaders", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/uqD7VqQU"))() print("Clicked") end)Section:NewButton("Blade ball script OP", "ButtonInfo", function()loadstring(game:HttpGet('https://shz.al/~LUYHUB'))() print("Clicked") end)Section:NewButton("Verus script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/wC64LrAJ"))() print("Clicked") end)Section:NewButton("1x1x1x1 script gui", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/CYye6uA4"))() print("Clicked") end)Section:NewButton("Script searcher", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))() print("Clicked") end)Section:NewButton("Animation changer", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))() print("Clicked") end)Section:NewButton("Speed changer", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/MrScripterrFr/Speed-Changer/main/Speed%20Changer"))(); print("Clicked") end)Section:NewButton("Jumpspeed changer", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/b6EaD89h"))() print("Clicked") end)Section:NewButton("Emote hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FEmotesGui/main/FEmotesGui.lua", true))() print("Clicked") end)Section:NewButton("Kick script Not FE! ", "ButtonInfo", function()loadstring(game:HttpGet(('https://pastebin.com/raw/B0gRJ2RS')))() print("Clicked") end)Section:NewButton("Fe touch fling", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))() print("Clicked") end)Section:NewButton("Fps booster", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/zJztwUg1"))() print("Clicked") end)Section:NewButton("Fake Headless/Korblox", "ButtonInfo", function()loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))() print("Clicked") end)Section:NewButton("Fly Gui V3", "ButtonInfo", function()loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-I-Fly-gui-V3-I-6627"))() print("Clicked") end)Section:NewButton("Climb walls fe", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_E872F3ky4888TSVdj6Adgi1hSLtM038AyxVpTVw07QA3QUDcI3sxmuD869hYR4id.lua.txt"))() print("Clicked") end)Section:NewButton("Zombie lab script", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/zlab", true))() print("Clicked") end)Section:NewButton("Ice hub", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))() print("Clicked") end)Section:NewButton("Executor Hub V1", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/kiYNE0sp"))() print("Clicked") end)Section:NewButton("Fe lag switch", "ButtonInfo", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))() print("Clicked") end)Section:NewButton("Fe fake lag", "ButtonInfo", function()loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))() print("Clicked") end)Section:NewButton("Mouse cursor", "ButtonInfo", function()loadstring(game:HttpGet(('https://pastefy.app/58d8d52G/raw'),true))() print("Clicked") end)Section:NewButton("Fe rewind script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/cgWLwdN9", true))() print("Clicked") end)Section:NewButton("Esp script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/AFGfwLgQ"))() print("Clicked") end)Section:NewButton("Btools script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/FBKJTUyw"))() print("Clicked") end)Section:NewButton("R6 Converter FE!!", "ButtonInfo", function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua'),true))() print("Clicked") end)Section:NewButton("Cctv camera script", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))() print("Clicked") end)Section:NewButton("Total drama script", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))(); print("Clicked") end)Section:NewButton("Prison life admin cmds", "ButtonInfo", function()loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))(); print("Clicked") end)Section:NewButton("Avatar stealer", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/iiJybvAa"))() print("Clicked") end)Section:NewButton("Script searcher but better", "ButtonInfo", function()loadstring(game:HttpGet('https://sirius.menu/script'))(); print("Clicked") end)Section:NewButton("Op play any roblox song script", "ButtonInfo", function()loadstring(game:HttpGet(('https://pastebin.com/raw/g97RafnE'),true))() print("Clicked") end)Section:NewButton("Mega easy obby script", "ButtonInfo", function()loadstring(game:HttpGet'https://pastebin.com/raw/Nv89Cn5d')() print("Clicked") end)Section:NewButton("Speed run 4 script", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/9ur98wh8fjkerbngo12ikontgg/fortnite/main/speed%20run%204%2023iuhjnfwefe%20wyufwyufg%20weuyfgweuyfgweyufwefyugwefyugweuyfgweyufu89wgh3984r%20f0b72%203", true))() print("Clicked") end)Section:NewButton("Game Hub V6", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))() print("Clicked") end)Section:NewButton("Fe Hub", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/kXQpndwP"))() print("Clicked") end)Section:NewButton("Junko universal hub", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/d5BS5qiX"))() print("Clicked") end)Section:NewButton("Auto-clicker", "ButtonInfo", function()getgenv().key = "Hostile" loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))() print("Clicked") end)Section:NewButton("Rtx shaders 2", "ButtonInfo", function()loadstring(game:HttpGet(('https://pastebin.com/raw/P1NgA165'),true))() print("Clicked") end)Section:NewButton("Ghub V14", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/GHUBV14XZ/main/Ghub_Main_Loader.txt"))() print("Clicked") end)Section:NewButton("Fe bring gui", "ButtonInfo", function()loadstring(game:HttpGet(('https://pastebin.com/raw/iThJgCAS'),true))() print("Clicked") end)Section:NewButton("Size gui script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/vgz5yrhx"))() print("Clicked") end)Section:NewButton("exe ui remover", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/shehajeez/shomo-roblox/main/androidexecutoruiremover.lua"))()
+ print("Clicked") end)Section:NewButton("fly gui modded", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/GDvMG4Ve"))() print("Clicked") end)Section:NewButton("Executor Hub V2", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/ZcxV5emk"))() print("Clicked") end)Section:NewButton("Tp tool script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/E0mTN6L6"))()print("Clicked") end)Section:NewButton("Rejoin button script", "ButtonInfo", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua", true))() print("Clicked") end)Section:NewButton("Fe invisible script", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))() print("Clicked") end)Section:NewButton("Ghost Hub", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() print("Clicked") end)Section:NewButton("FE exploit share", "ButtonInfo", function()loadstring(game:HttpGet'https://raw.githubusercontent.com/VIPFirstTime/UploadFile/main/ExShareV2/Unpatched.lua')() print("Clicked") end)Section:NewButton("FE Climb walls", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))() print("Clicked") end)Section:NewButton("All Typhoon script V3", "ButtonInfo", function()loadstring(game:HttpGet("https://freenote.biz/raw/SkG1nrBqE8",true))() print("Clicked") end)Section:NewButton("Vfly script", "ButtonInfo", function()loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))() print("Clicked") end)Section:NewButton("Perm shiftlock", "ButtonInfo", function()loadstring(game:HttpGet("https://scriptblox.com/raw/Baseplate-Universal-Script-Permanent-Shift-Lock-6924"))() print("Clicked") end)Section:NewButton("Teleport gui", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Teleport%20Gui.lua'))() print("Clicked") end)Section:NewButton("Nameless admin", "ButtonInfo", function()loadstring(game:HttpGet('https://gist.github.com/inuk84/ca841931f45f242c945405298b26bd71/raw/af364e5d4ea5b0d2eac404a5376d83c84a23cbe4/na.lua'))() print("Clicked") end)
+
+local Tab = Window:NewTab("Support")
+local Section = Tab:NewSection("@REYVINGS")
+local Section = Tab:NewSection("Discord name:scriptx") 
+Tab:NewSection("Hope you enjoy ðŸ˜Š")
+Tab:NewSection("And no one help me to do (>︿<｡)")
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Script Executed";
+    Text = "Malay hub Exceuted"; -- what the text says (ofc)
+    Duration = 30;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Enjoy ðŸ˜Š";
+    Text = "Have a Great Day ^_^"; -- what the text says (ofc)
+    Duration = 30;
+})
+print("Clicked")
+
+--Toggle
+local ToggleGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties
+ToggleGui.Name = "Toggle Gui"
+ToggleGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ToggleGui.ResetOnSpawn = false
+
+UICorner.Parent = Toggle
+Toggle.Name = "Toggle"
+Toggle.Parent = ToggleGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
+Toggle.Size = UDim2.new(0, 85, 0, 39)--size of the toggle
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Malay hub"--name of the toggle
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 19.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+  Library:ToggleUI()
+end)
+
+local ChadWaterMark = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+
+ChadWaterMark.Name = "Malay hub V2"
+ChadWaterMark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ChadWaterMark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ChadWaterMark.ResetOnSpawn = false
+
+TextLabel.Parent = ChadWaterMark
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000772226602, 0, 0.0343558267, 0)
+TextLabel.Size = UDim2.new(0.170134634, 0, 0.0700389072, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Malay hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 31
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.MouseButton1Down:Connect(function()
+    print("Made by REYVINGS")
+end)
+
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0.00, Color3.fromHSV(0, 1, 1)), -- Red
+    ColorSequenceKeypoint.new(0.16, Color3.fromHSV(30, 1, 1)), -- Orange
+    ColorSequenceKeypoint.new(0.33, Color3.fromHSV(60, 1, 1)), -- Yellow
+    ColorSequenceKeypoint.new(0.50, Color3.fromHSV(120, 1, 1)), -- Green
+    ColorSequenceKeypoint.new(0.66, Color3.fromHSV(240, 1, 1)), -- Blue
+    ColorSequenceKeypoint.new(0.83, Color3.fromHSV(270, 1, 1)), -- Indigo
+    ColorSequenceKeypoint.new(1.00, Color3.fromHSV(300, 1, 1)) -- Violet
+}
+UIGradient.Parent = TextLabel
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.000772226602, 0, 0.67410934, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "V2"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 270, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 24
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_2.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0.00, Color3.fromHSV(0, 1, 1)), -- Red
+    ColorSequenceKeypoint.new(0.16, Color3.fromHSV(30, 1, 1)), -- Orange
+    ColorSequenceKeypoint.new(0.33, Color3.fromHSV(60, 1, 1)), -- Yellow
+    ColorSequenceKeypoint.new(0.50, Color3.fromHSV(120, 1, 1)), -- Green
+    ColorSequenceKeypoint.new(0.66, Color3.fromHSV(240, 1, 1)), -- Blue
+    ColorSequenceKeypoint.new(0.83, Color3.fromHSV(270, 1, 1)), -- Indigo
+    ColorSequenceKeypoint.new(1.00, Color3.fromHSV(300, 1, 1)) -- Violet
+}
+UIGradient_2.Parent = TextLabel_2
+
+UITextSizeConstraint.Parent = TextLabel_2
+UITextSizeConstraint.MaxTextSize = 24
+
+UITextSizeConstraint_2.Parent = TextLabel
+UITextSizeConstraint_2.MaxTextSize = 27
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+    vu:Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+end)
