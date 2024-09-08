@@ -110,12 +110,6 @@ loadstring(game:HttpGet("https://pastefy.app/Q2YemCzV/raw"))()
 print("Clicked")	    
 end)
 
-
-Section:NewButton("Player v6", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastefy.app/QdLMtlEt/raw"))()
-print("Clicked")	    
-end)
-
 Section:NewButton("Player v5", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastefy.app/CcFpymgh/raw"))()
 print("Clicked")	    
