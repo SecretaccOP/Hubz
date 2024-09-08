@@ -719,9 +719,10 @@ Tab:NewSection("Hope you enjoy ðŸ˜Š")
 Tab:NewSection("And no one help me to do (>︿<｡)")
 
 local Tab = Window:NewTab("Showcase")
-Tab:NewSection("if you showcare My Script. I will write your name here")
-Tab:NewSection("Showcase: He flash")
-Tab:NewSection("Showcase: Denim_blox")
+Tab:NewSection("if you showcase My Script in Youtube. I will write your name here")
+Tab:NewSection("Showcase: KrakenofficialYT")
+Tab:NewSection("Showcase: DARKKING")
+Tab:NewSection("Showcase: Yasuf showcase")
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "Script Executed";
