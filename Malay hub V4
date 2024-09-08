@@ -100,58 +100,47 @@ loadstring(game:HttpGet("https://rentry.co/projektembuspandang/raw"))();
 print("Clicked")
 end)
 
-Section:NewButton("Player v8",function()
-loadstring(game:HttpGet("https://pastefy.app/ubrdUAjc/raw"))()	    
+Section:NewButton("Player v8", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/ubrdUAjc/raw"))()
+print("Clicked")	    
 end)
 
-Section:NewButton(
-	Name = "Player v7",
-	Callback = function()
+Section:NewButton("Player v7", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastefy.app/IMBehd9M/raw"))()
+print("Clicked")	    
 end)
 
-Section:NewButton({
-	Name = "Player v6",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/QdLMtlEt/raw"))()
-  	end    
-)
 
-Section:NewButton({
-	Name = "Player v5",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/CcFpymgh/raw"))()
-  	end    
-})
+Section:NewButton("Player v6", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/QdLMtlEt/raw"))()
+print("Clicked")	    
+end)
 
-Section:NewButton({
-	Name = "Player v4",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/DMAJ0MuJ/raw"))()
-  	end    
-})
+Section:NewButton("Player v5", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/CcFpymgh/raw"))()
+print("Clicked")	    
+end)
 
-Section:NewButton({
-	Name = "Player v3",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/xw9X5JEv/raw"))()
-  	end    
-})
+Section:NewButton("Player v4", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/DMAJ0MuJ/raw"))()
+print("Clicked")	    
+end)
 
-Section:NewButton({
-	Name = "Player v2",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/Sn9vPu97/raw"))()
-  	end    
-})
-
-Section:NewButton({
-	Name = "Player v1",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/Lo7rKnkD/raw"))()
-  	end    
-})
-
+Section:NewButton("Player v3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/xw9X5JEv/raw"))()
+print("Clicked")	    
+end)
+  	   
+Section:NewButton("Player v2", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/Sn9vPu97/raw"))()
+print("Clicked")	    
+end)
+  	    
+Section:NewButton("Player v1", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/Lo7rKnkD/raw"))()
+print("Clicked")	    
+end)
+  	    
 local Tab = Window:NewTab("Fe scripts")
 local Section = Tab:NewSection("Fe scripts")
 
