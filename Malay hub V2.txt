@@ -736,6 +736,25 @@ local Section = Tab:NewSection("Discord name:scriptx")
 Tab:NewSection("Hope you enjoy ðŸ˜Š")
 Tab:NewSection("And no one help me to do (>︿<｡)")
 
+local Tab = Window:MakeTab({
+	Name = "Showcare [Only on YouTube]",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:NewSection({
+	Name = "if you showcare My Script. I will write your name here"
+})
+
+local Section = Tab:NewSection({
+	Name = "Showcare: He flash"
+})
+
+local Section = Tab:NewSection({
+	Name = "Showcare: Denim_blox"
+})
+
+
 game.StarterGui:SetCore("SendNotification", {
     Title = "Script Executed";
     Text = "Malay hub Exceuted"; -- what the text says (ofc)
