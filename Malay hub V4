@@ -121,12 +121,12 @@ print("Clicked")
 end)
 
 Section:NewButton("Player v3", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastefy.app/xw9X5JEv/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/VxNpzh2j/raw"))()
 print("Clicked")	    
 end)
   	   
 Section:NewButton("Player v2", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastefy.app/Sn9vPu97/raw"))()
+loadstring(game:HttpGet("https://pastefy.app/BQZin1YG/raw"))()
 print("Clicked")	    
 end)
   	    
