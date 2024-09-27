@@ -952,7 +952,7 @@ MainSection:NewButton("Zombie Attack", "Autofarm and More!" , function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/f0a3yune')))()
 end)
 
-local Tab = Window:NewTab("Game [Hub]")
+local Tab = Window:NewTab("Games 2 [Hub]")
 local Section = Tab:NewSection("Game hub")
 
 Section:NewButton("Game hub v10", "ButtonInfo", function()
