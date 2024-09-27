@@ -947,6 +947,44 @@ MainSection:NewButton("Zombie Attack", "Autofarm and More!" , function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/f0a3yune')))()
 end)
 
+local Tab = Window:NewTab("Game [Hub]")
+local Section = Tab:NewSection("Game hub")
+
+Section:NewButton("Game hub v8", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/LW0dxbym/raw"))()
+print("Clicked")	    
+end)
+
+Section:NewButton("Game hub v7", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/Q2YemCzV/raw"))()
+print("Clicked")	    
+end)
+
+Section:NewButton("Game hub v5", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/H9feqmYi/raw"))()
+print("Clicked")	    
+end)
+
+Section:NewButton("Game hub v4", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/ZgsdT4ea/raw"))()
+print("Clicked")	    
+end)
+
+Section:NewButton("Game hub v3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/UbRvqYhg/raw"))()
+print("Clicked")	    
+end)
+  	   
+Section:NewButton("Game hub v2", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/AuzlfG7m/raw"))()
+print("Clicked")	    
+end)
+  	    
+Section:NewButton("Game hub v1", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastefy.app/2aaFWViC/raw"))()
+print("Clicked")	    
+end)
+
 local Tab = Window:NewTab("Support")
 local Section = Tab:NewSection("@REYVINGS")
 local Section = Tab:NewSection("Discord name:scriptx") 
@@ -1006,7 +1044,7 @@ local UIGradient_2 = Instance.new("UIGradient")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 
-ChadWaterMark.Name = "Malay hub V4"
+ChadWaterMark.Name = "Malay hub V5"
 ChadWaterMark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ChadWaterMark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ChadWaterMark.ResetOnSpawn = false
