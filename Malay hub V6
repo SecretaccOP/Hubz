@@ -8,7 +8,7 @@ local colors = {
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))()
-local Window = Library.CreateLib("Malay hub V6", colors)
+local Window = Library.CreateLib("Malay hub V Beta", colors)
 
 local GameId = game.PlaceId
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(GameId).Name
@@ -800,7 +800,7 @@ Section:NewButton("Multi-Scripter-X","Hub",function()  loadstring(game:HttpGet("
 print("Clicked")
 end)
 
-local Tab = Window:NewTab("executor") local Section = Tab:NewSection("Need help? Contact @REYVINGS") 
+local Tab = Window:NewTab("Executor [In update...]") local Section = Tab:NewSection("Need help? Contact @REYVINGS") 
 
 Section:NewButton("Krnl remake", "executor", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/wtfplayer/redemption/main/krnlnoui.lua"))() print("Clicked") end)
 Section:NewButton("Nathan's Executor", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Makeruwu/Scfipg/main/Executor2%2C3'))() print("Clicked") end)
