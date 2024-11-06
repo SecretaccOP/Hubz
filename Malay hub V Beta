@@ -65,7 +65,7 @@ function animateLoadingBar()
   wait(0.5)
   gui:Destroy()
 
- loadstring(game:HttpGet("https://raw.githubusercontent.com/OpscriptPRO/OP-script/refs/heads/main/Malay%20hub%20V5"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/Malay%20hub%20V6"))()
 end
 
 -- Function to update the loading progress
