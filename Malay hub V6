@@ -648,6 +648,405 @@ print("Clicked")
 end)
 
 local Section = Tab:NewSection("Local Player 【End】")
+
+local Tab = Window:NewTab("【Script】")
+local Section = Tab:NewSection("Script | Gui")
+
+Section:NewButton("Fly Arceus X | Mobile", "Fly ArceusXBy ArceusX Neo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20Fly.lua"))()
+end)
+
+Section:NewButton("Fly Mobile【Fly HD ADMIN V1】", "Made By Take Modzz Or DXP Team", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Ignore-00000/main/Ignore"))()
+end)
+
+Section:NewButton("Fly Gui V3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Section:NewButton("Sadboy Creepy Fly", "Makes you fly creepy", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/p0sGsY6e"))()
+end)
+
+Section:NewButton("Chat Troll", "fake user chat", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/DUveS6mU"))()
+end)
+
+Section:NewButton("Remote Spy V3", "Make Fe Script or any script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
+Section:NewButton("Simple Spy", "Simple Spy", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
+Section:NewButton("Turtle Spy", "Turtle Spy", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/7GmZyarT'))()
+end)
+
+Section:NewButton("Fake Lag", "Use Is To Hack And Say Im Laggy", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
+end)
+
+Section:NewButton("Fake Headless", "Your Head Is Missing", function()
+loadstring(game:HttpGet(('https://gist.githubusercontent.com/Gogogamer61/de8bf177f8ac5d4aa38e0b0f3c18957b/raw/680220619d022f6f44e9df30d13e44068d407708/HEADLESS%2520SCRIPT2'),true))()
+end)
+
+Section:NewButton("Universal Bypasser Dark Dex V3", "Universal Bypasser Dark Dex", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+
+Section:NewButton("Dex 2.0.0", "Better then dex 4 if your in mobile", function()
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+end)
+
+Section:NewButton("Dex 4", "dark mode i guess", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/dexV4/main/main.lua'))()
+end)
+
+Section:NewButton("Old Dex Explorer", "old dex you know", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
+end)
+
+Section:NewButton("Flash Light", "Flash Light", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/LSL8cSGb"))()
+end)
+
+Section:NewButton("Fps Counter", "See if Your roblox is laggy", function()
+loadstring(game:HttpGet("https://pastefy.app/dHlfyJ9T/raw"))()
+end)
+
+Section:NewButton("Fps Booster", "Makes your game run smoother", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownproootest/UniversalfpsboostXunlocker/main/FpsBoost'),true))()
+end)
+
+Section:NewButton("Ping Counter", "Check if your wifi is good", function()
+loadstring(game:HttpGet("https://pastefy.app/FXsGZvfV/raw"))()
+end)
+
+Section:NewButton("Tp Saved Location", ".", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
+end)
+
+Section:NewButton("Antik Kick", "Anti Kick", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FPfaukXN"))()
+end)
+
+Section:NewButton("KeyStrokes Gui", "?", function()
+loadstring(game:HttpGet(('https://pastefy.ga/QXL2Aswh/raw'),true))()
+end)
+
+Section:NewButton("Keyboard New Gui 1", "Epic", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+Section:NewButton("Keyboard Old Gui 2", "Old", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+Section:NewButton("Super Keyboard", "its new too", function()
+loadstring(game:HttpGet("https://pastefy.app/fCxSTDen/raw"))()
+end)
+
+Section:NewButton("Controller Auto Walk And Jump", "need to move great here", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/srtepuBM'))()
+end)
+
+Section:NewButton("Block Spawner", "?", function()
+loadstring(game:HttpGet("https://pastefy.app/TcE4uJ4u/raw"))()
+end)
+
+Section:NewButton("Everything Rainbow", "?", function()
+loadstring(game:HttpGet("https://pastefy.app/i5xcp02u/raw"))()
+end)
+
+Section:NewButton("Ink Monster Fling", "Fling Player", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_rTvXTs8F16D8D2oiLxZ62E1E9jT1we312yUyJr2h72Vwqr32l37rirU1S89hqRV7.lua.txt"))()
+end)
+
+Section:NewButton("Buried Head", "Troll", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_778na73437jr20D90Bdp00lD982HA84v7jM92eCTxHk8sWo561GPj6y444XtXKfb.lua.txt"))()
+end)
+
+Section:NewButton("Realistic Camera Gui", "First Person View", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/First%20person%20view"))()
+end)
+
+Section:NewButton("Illusion", "Sonic Troll", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+end)
+
+Section:NewButton("Btools R6 and R15 V5", "?", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Fe%20Btools%20R6%20and%20R15%20V5%20by%20Rouxhaver'),true))()
+end)
+
+Section:NewButton("Player Side", "Troll", function()
+loadstring(game:HttpGet(('https://pastefy.app/ZOigwB5X/raw'),true))()
+end)
+
+Section:NewButton("Hubter Shooter", "Chat Kill Notification", function()
+loadstring(game:HttpGet("https://pastefy.app/xUOvhqpf/raw"))()
+end)
+
+Section:NewButton("Chat Article", "Hats: None", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/omegachadgaming/mongus/main/main.lua", true))()
+end)
+
+Section:NewButton("Lag Switch", "?", function()
+loadstring(game:HttpGet("https://paste.gg/p/anonymous/d3492bd620bd4c46b54680ac80b0fa0d/files/161ddd9c992c4ceba3c298458d45188a/raw", true))()
+end)
+
+Section:NewButton("Aimbot | Arceus X Mobile", "Locks Aim to Players (best for 1v1)", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1Gp9c57U"))()
+end)
+
+Section:NewButton("Aimbot V2 Universal", "Aimbot for every game.", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PABLOSleuth2/Scripts1/main/RobloxScripts/TEST/aimbot_v2.lua'))()
+end)
+
+Section:NewButton("Universal Emote", "Free Emote wow", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+end)
+
+Section:NewButton("Universal Radar", "Esp BUT SO MUCH Better", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZhenX201/fe-radar-script/main/source"))()
+end)
+
+Section:NewButton("Freeze Camera", "Awesome", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/T0S0RPTW'))()
+end)
+
+Section:NewButton("Tool Giver V2", "item that suppose to be in the game your in", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Fj8KWmLC'))()
+end)
+
+Section:NewButton("Game Teleport", "need id game first", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/hiWAdBMa'))()
+end)
+
+Section:NewButton("Auto Presser V2", "Cool", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Presser%20v2'))()
+end)
+
+Section:NewButton("Break Camera Script", "noice", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Break%20Camera'))()
+end)
+
+Section:NewButton("Hide Player", "No People and not fe", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20Players'))()
+end)
+
+Section:NewButton("Musiclist Gui", "Your old Classic Music", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Music%20Gui'))()
+end)
+
+Section:NewButton("Super Tools", "gives you cool tools to use", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/sQWeMuB0'))()
+end)
+
+Section:NewButton("Telescope Gui", "loads a telescope gui not fe", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/8T0STS4f'))()
+end)
+
+Section:NewButton("Speed Tool", "Gives you a tool to speed up", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/iShZQHw7'))()
+end)
+
+Section:NewButton("Clone (Not Fe)", "clones you're avatar not fe", function()
+loadstring(game:GetObjects('rbxassetid://7339698872')[1].Source)()
+end)
+
+Section:NewButton("Spectate Gui", "Spectate People", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/wyvdb7gr'))()
+end)
+
+Section:NewButton("Black & White Shader", "No Colot", function()
+loadstring(game:HttpGet("https://pastefy.app/f2fcv8Oe/raw"))()
+end)
+
+Section:NewButton("Jump Button", "only a jump button", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/qhBY6frK'))();
+end)
+
+Section:NewButton("Dupe Tool", "You get it, it's in the title", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Spam%20Tools'))()
+end)
+
+Section:NewButton("Target Player", "Kill or fling player", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\68\56\117\81\76\49\109\84\39\41\41\40\41\10")()
+end)
+
+Section:NewButton("Chat Bypasser Gui", "?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/ChatBypasser-AZY/main/Chat%20Bypass%20-%20ChatSplitter(Source).lua"))()
+end)
+
+Section:NewButton("Freeze Time", "You will freeze not the other player", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/djAd7g2W'))()
+end)
+
+Section:NewButton("VFly Cars", "Flying Cars", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+end)
+
+Section:NewButton("Noclip Gui", "OP", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
+end)
+
+Section:NewButton("Remove Player", "Only makes them invis", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Kud3hXHf'))()
+end)
+
+Section:NewButton("Bring Player Gui", "Yea be annoying", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/iThJgCAS'),true))()
+end)
+
+Section:NewButton("Annoy People Gui 2", "loads a gui to annoy players with", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/ZME5dX7w'))()
+end)
+
+Section:NewButton("Freeze", "Freeze in air lol", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
+end)
+
+Section:NewButton("Auto Walk", "Yea do nothing and walk only", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QAZwWuHN'))();
+end)
+
+Section:NewButton("Lag Chat Gui", "?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Fe%20lag%20chat%20Gui"))()
+end)
+
+Section:NewButton("RTX Gui Shader ", "Get the 2055 version of roblox", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+end)
+
+Section:NewButton("RTX Gui Shader V3.1", "Noice script", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\110\106\121\80\48\80\77\49\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+end)
+
+Section:NewButton("RTX Gui Shader V4.6", "?", function()
+loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+end)
+
+Section:NewButton("Time Controller Gui", "Time", function()
+loadstring("\115\101\116\116\105\110\103\32\61\32\115\101\116\116\105\110\103\115\40\41\46\78\101\116\119\111\114\107\10\108\111\99\97\108\32\69\102\102\101\99\116\32\61\32\73\110\115\116\97\110\99\101\46\110\101\119\40\34\67\111\108\111\114\67\111\114\114\101\99\116\105\111\110\69\102\102\101\99\116\34\41\10\69\102\102\101\99\116\46\80\97\114\101\110\116\32\61\32\103\97\109\101\46\76\105\103\104\116\105\110\103\10\69\102\102\101\99\116\46\83\97\116\117\114\97\116\105\111\110\32\61\32\45\51\10\69\102\102\101\99\116\46\66\114\105\103\104\116\110\101\115\115\32\61\32\48\10\69\102\102\101\99\116\46\67\111\110\116\114\97\115\116\32\61\32\48\10\10\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\102\97\108\115\101\10\10\108\111\99\97\108\32\108\105\98\114\97\114\121\32\61\32\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\108\111\111\100\98\97\108\108\47\45\98\97\99\107\45\117\112\115\45\102\111\114\45\108\105\98\115\47\109\97\105\110\47\119\97\108\108\37\50\48\118\51\39\41\41\41\40\41\10\10\108\111\99\97\108\32\119\32\61\32\108\105\98\114\97\114\121\58\67\114\101\97\116\101\87\105\110\100\111\119\40\34\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\119\105\110\100\111\119\10\10\108\111\99\97\108\32\98\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\84\105\109\101\32\83\116\111\112\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\44\101\116\99\41\10\10\108\111\99\97\108\32\99\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\84\105\109\101\32\67\108\111\99\107\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\84\105\109\101\32\67\111\110\116\114\111\108\108\101\114\44\101\116\99\41\10\10\108\111\99\97\108\32\97\32\61\32\119\58\67\114\101\97\116\101\70\111\108\100\101\114\40\34\68\101\115\116\114\111\121\32\71\117\105\34\41\32\45\45\32\67\114\101\97\116\101\115\32\116\104\101\32\102\111\108\100\101\114\40\82\101\109\111\118\101\32\89\111\117\114\32\71\117\105\44\101\116\99\41\10\10\10\98\58\76\97\98\101\108\40\34\73\109\32\80\97\116\114\105\99\107\34\44\123\10\32\32\32\32\84\101\120\116\83\105\122\101\32\61\32\50\53\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\84\101\120\116\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\48\44\32\50\53\53\44\32\50\53\53\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\66\103\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\49\51\44\32\49\48\53\44\32\49\55\50\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\10\125\41\32\10\10\98\58\66\117\116\116\111\110\40\34\83\116\111\112\32\84\105\109\101\34\44\102\117\110\99\116\105\111\110\40\41\10\9\9\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\116\114\117\101\10\9\9\115\101\116\116\105\110\103\46\73\110\99\111\109\105\110\103\82\101\112\108\105\99\97\116\105\111\110\76\97\103\32\61\32\51\48\48\48\10\9\9\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\61\32\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\42\32\51\10\101\110\100\41\10\10\98\58\66\117\116\116\111\110\40\34\85\110\115\116\111\112\32\84\105\109\101\34\44\102\117\110\99\116\105\111\110\40\41\10\9\9\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\108\97\121\101\114\46\67\104\97\114\97\99\116\101\114\46\72\117\109\97\110\111\105\100\46\87\97\108\107\83\112\101\101\100\32\61\32\49\54\10\9\9\69\102\102\101\99\116\46\69\110\97\98\108\101\100\32\61\32\102\97\108\115\101\10\9\32\32\32\32\115\101\116\116\105\110\103\46\73\110\99\111\109\105\110\103\82\101\112\108\105\99\97\116\105\111\110\76\97\103\32\61\32\48\10\9\9\10\101\110\100\41\10\10\97\58\68\101\115\116\114\111\121\71\117\105\40\41\10\10\99\58\76\97\98\101\108\40\34\73\109\32\80\97\116\114\105\99\107\34\44\123\10\32\32\32\32\84\101\120\116\83\105\122\101\32\61\32\50\53\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\84\101\120\116\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\48\44\32\50\53\53\44\32\50\53\53\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\66\103\67\111\108\111\114\32\61\32\67\111\108\111\114\51\46\102\114\111\109\82\71\66\40\49\51\44\32\49\48\53\44\32\49\55\50\41\59\32\45\45\32\83\101\108\102\32\69\120\112\108\97\105\110\105\110\103\10\32\32\32\32\10\125\41\32\10\10\99\58\66\111\120\40\34\67\108\111\99\107\32\84\105\109\101\34\44\34\110\117\109\98\101\114\34\44\102\117\110\99\116\105\111\110\40\118\97\108\117\101\41\32\45\45\32\34\110\117\109\98\101\114\34\32\111\114\32\34\115\116\114\105\110\103\34\10\103\97\109\101\58\71\101\116\83\101\114\118\105\99\101\40\34\76\105\103\104\116\105\110\103\34\41\46\67\108\111\99\107\84\105\109\101\32\61\32\118\97\108\117\101\10\101\110\100\41\10")()
+end)
+
+Section:NewButton("Anti Steal V7.33", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/uHznnqmM'))()
+end)
+ 
+Section:NewButton("Serenity", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/v9h/Serenity/main/main.lua"))()
+end)
+
+Section:NewButton("Anti Logger", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/J0BHhzx1'))()
+end)
+
+Section:NewButton("Auto Rap Battle Gui", "loads a gui for the game", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/3dh0d3ya'))()
+end)
+
+Section:NewButton("Infinite Jump", "lets you jump forever", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/KpT16qBg'))()
+end)
+
+Section:NewButton("R15 UpDown Gui", "jumps to the postition or number you type", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/UpDown'))()
+end)
+
+Section:NewButton("R6 Updown", "makes your roblox player go upside down", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/e1xMVyWb'))()
+end)
+
+Section:NewButton("Small Fling Gui", "Loads a small fling gui", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+end)
+
+Section:NewButton("Loop Fling All", "automatically flings people", function()
+loadstring(game:HttpGet('https://github.com/DigitalityScripts/roblox-scripts/raw/main/loop%20fling%20all'))()
+end)
+
+Section:NewButton("Fling Tool", "Caracter Invisible Fling", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QKbzxzSj'))()
+end)
+
+Section:NewButton("Supe Punch Fling", "Super Fling", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+end)
+
+Section:NewButton("Walk Fling", "Send them foes flying with your new fling shoes", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+end)
+
+Section:NewButton("Yeet Gui Fling", "fling ppl if collision enabled", function()
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Yeet-Gui-1510"))()
+end)
+
+Section:NewButton("Anti Fling", "never get flung again", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/hKfDWcJw'))();
+end)
+
+Section:NewButton("Speed Gui", "Loads a gui with speed control", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/PrototypeRBLX/Speed-Script/main/README.md'),true))()
+end)
+
+Section:NewButton("Speed Tool", "Gives you a tool to speed up", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/iShZQHw7'))()
+end)
+
+Section:NewButton("EarRape", "Click to play all sounds in the game you're in at once", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/nZjJq2wJ"))()
+end)
+
+Section:NewButton("Animation Gui", "Loads a gui with animations to use", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0MLPL32f"))()
+end)
+
+Section:NewButton("Invisible Gui", "Loads a gui that makes you invisible", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+end)
+
+Section:NewButton("Troll Gui 1i", "loads a gui to troll players", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/FS0hUuJg'))()
+end)
+
+Section:NewButton("Troll Gui 2", "This Best", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/0fnFAR9e'))()
+end)
+
+Section:NewButton("Tall", "must be tall first", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Lix6q0PD'))()
+end)
+
+Section:NewButton("Walk/Run Gui", "loads a gui to Run/Walk", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/72EKEHqC'))()
+end)
+
+Section:NewButton("Walk Climb R6", "lets you climb on any walls", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/jLVhHEVW'))()
+end)
+
+Section:NewButton("Body Part Destroyer Gui", "fe and destroys your body parts", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/eE0PQ7jk'))()
+end)
+
+Section:NewButton("Super Tools", "gives you cool tools to use", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/sQWeMuB0'))()
+end)
+
+Section:NewButton("Fake Death", "you're dead", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/kjxNZCfb'))()
+end)
+
+Section:NewButton("R15 Fe Just Legs", "just legs", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/Cj2Tm82A'))()
+end)
+
+Section:NewButton("Freeze Mode", "Gives you tools to freeze yourself just tap", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
+end)
   	    
 local Tab = Window:NewTab("Fe scripts")
 local Section = Tab:NewSection("Fe scripts")
