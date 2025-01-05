@@ -104,30 +104,295 @@ Section:NewButton("Infinite Jumps", "inf jump", function()
     print("Clicked")
 end)
 
-Section:NewSlider("Walkspeed", "Changes how fast you walk.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue) 
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s 
-
+Section:NewSlider("WalkSpeed", "WalkSpeed", 1000, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("JumpPower", "Changes how fast you jump.", 250, 16, function(s) -- 500 (MaxValue) | 0 (MinValue) 
-
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = s 
-
+Section:NewTextBox("Set Walkspeed","Set WalkSpeed", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 
-Section:NewToggle("Fov", "Changes The Fov", function(state)
-
+Section:NewToggle("WalkSpeed 120", "WalkSpeed 120", function(state)
     if state then
-
-        game.Workspace.CurrentCamera.FieldOfView = 120
-
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
     else
-
-        game.Workspace.CurrentCamera.FieldOfView = 80
-
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
+end)
 
+Section:NewButton("Reset WalkSpeed", "Reset WalkSpeed", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+local Section = Tab:NewSection("JumpPower")
+
+Section:NewSlider("JumpPower", "JumpPower", 1000, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewTextBox("Set JumpPower","Set JumpPower", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+
+Section:NewToggle("JumpPower 120", "JumpPower 120", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+Section:NewButton("Reset JumpPower", "Reset JumpPower", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+local Section = Tab:NewSection("HipHeight")
+
+Section:NewSlider("HipHeight", "HipHeight", 1000, 2, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
+end)
+
+Section:NewTextBox("Set HipHeight", "Set HipHeight", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = txt
+end)
+
+Section:NewToggle("HipHeight 120", "HipHeight 120", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+    end
+end)
+
+Section:NewButton("Reset HipHeight", "Reset HipHeight", function()
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+end)
+
+local Section = Tab:NewSection("Gravity")
+
+Section:NewSlider("Gravity", "Gravity", 1000, 196, function(s)
+    game.Workspace.Gravity = s
+end)
+
+Section:NewTextBox("Set Gravity", "Set Gravity ", function(txt)
+    game.Workspace.Gravity = txt
+end)
+
+Section:NewToggle("Gravity 120", "Gravity 120", function(state)
+    if state then
+        game.Workspace.Gravity = 120
+    else
+        game.Workspace.Gravity = 196
+    end
+end)
+
+Section:NewButton("Reset Gravity", "Reset Gravity", function()
+    game.Workspace.Gravity = 2
+end)
+
+            if part:IsA("BasePart") then
+                part.CanCollide = false
+            end
+        end
+        game:GetService("RunService").Stepped:Wait()
+    end
+end)
+
+local xrayOn = false
+Section:NewToggle("Xray", "Toggle Xray", function(enabled)
+    xrayOn = enabled
+
+    if xrayOn then
+        for _, descendant in pairs(workspace:GetDescendants()) do
+            if descendant:IsA("BasePart") then
+                if not descendant:FindFirstChild("OriginalTransparency") then
+                    local originalTransparency = Instance.new("NumberValue")
+                    originalTransparency.Name = "OriginalTransparency"
+                    originalTransparency.Value = descendant.Transparency
+                    originalTransparency.Parent = descendant
+                end
+                descendant.Transparency = 0.5
+            end
+        end
+    else
+        for _, descendant in pairs(workspace:GetDescendants()) do
+            if descendant:IsA("BasePart") then
+                if descendant:FindFirstChild("OriginalTransparency") then
+                    descendant.Transparency = descendant.OriginalTransparency.Value
+                    descendant.OriginalTransparency:Destroy()
+                end
+            end
+        end
+    end
+end)
+
+local J = false;
+Section:NewToggle("Bunny Hop","?",function(K)
+J = K;
+spawn(function()
+while wait()
+and J do game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+end)
+
+Section:NewToggle("Gravity", "Toggle Gravity", function(state)
+    if state then
+        game.Workspace.Gravity = 30
+    else
+        game.Workspace.Gravity = 196
+    end
+end)
+
+Section:NewToggle("FullBright", "Toggle Fullbright", function(state)
+    if state then
+        loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+    else
+        loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+    end
+end)
+
+Section:NewToggle("Sit", "Toggle Sit", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.Sit = true
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+end)
+
+local Section = Tab:NewSection("Visual")
+
+Section:NewButton("Esp 【Name】", "Esp Name Player", function()
+loadstring(game:HttpGet("https://pastefy.app/RWp9KiKS/raw"))()
+end)
+
+Section:NewButton("Esp【Cham】", "Esp Cham Player", function()
+oadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-credit/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%202%E3%80%91"))()
+end)
+
+Section:NewButton("Esp 【Box】", "Esp Box Player", function()
+loadstring(game:HttpGet("https://pastefy.app/n0Q30kVc/raw"))()
+end)
+
+Section:NewButton("Esp【Tracer】", "Tracer Player", function()
+loadstring(game:HttpGet("https://pastefy.app/xY7X7V5y/raw"))()
+end)
+
+Section:NewButton("Map【Remover Texture】", "Remover Texture", function()
+loadstring(game:HttpGet("https://pastefy.app/SA3cYmh2/raw"))()
+end)
+
+Section:NewButton("Headshot【Aimbot】", "Aimbot Player", function()
+loadstring(game:HttpGet("https://pastefy.app/nWXJejNH/raw"))()
+end)
+
+Section:NewButton("Head Fit【Silent Aim】", "Silent Aim Player", function()
+loadstring(game:HttpGet("https://pastefy.app/FjnHzzX0/raw"))()
+end)
+
+Section:NewButton("Headshot Camera【Fov Aimbot】", "Fov Aimbot Player", function()
+loadstring(game:HttpGet("https://pastefy.app/720YG859/raw"))()
+end)
+
+local Section = Tab:NewSection("Time Day - Night")
+
+Section:NewSlider("Time", "Time", 2, 7, function(s)
+    game.Lighting.TimeOfDay = s
+end)
+
+Section:NewTextBox("Set Time 1 - 7", "Set Time", function(txt)
+    game.Lighting.TimeOfDay = txt
+end)
+
+Section:NewToggle("Day", "Day", function(state)
+    if state then
+        game.Lighting.TimeOfDay = 7
+    else
+        game.Lighting.TimeOfDay = 1
+    end
+end)
+
+Section:NewToggle("Night", "Night", function(state)
+    if state then
+        game.Lighting.TimeOfDay = 1
+    else
+        game.Lighting.TimeOfDay = 7
+    end
+end)
+
+local Section = Tab:NewSection("Message")
+
+Section:NewTextBox("Chat Your Message", "TextboxInfo", function(txt)
+ game.StarterGui:SetCore("ChatMakeSystemMessage",  { Text = txt, Color = Color3.fromRGB( 255,255,255 ), Font = Enum.Font.Arial } )
+end)
+
+local Section = Tab:NewSection("Reset Character")
+
+Section:NewTextBox("Set Health", "Makes Your Health 0 - 100 Th Did U Think It Would Do", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.Health = txt
+end)
+
+Section:NewButton("Reset [Health]", "Makes Your Health 0 Th Did U Think It Would Do", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+ 
+Section:NewButton("Reset [Humanoid]", "Kills Humanoid Th Did U Think It Would Do", function()
+    game.Players.LocalPlayer.Character.Humanoid:Destroy()
+end)
+
+Section:NewButton("Anti Fall Damage", "Anti Fall Damage", function()
+    game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+
+local Section = Tab:NewSection("For Graphic")
+
+Section:NewButton("Graphics Gui 1", "graficos tipo rtx", function()
+loadstring(game:HttpGet("https://pastefy.app/xXkUxA0P/raw"))()
+end)
+
+Section:NewButton("Graphics Gui 2", "rtx gui 3", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/enhancer.txt"))()
+end)
+
+Section:NewButton("Low Graphics No Gui 3", "rtx gui 2", function()
+loadstring(game:HttpGet("https://pastefy.app/BIr8OzrR/raw"))()
+end)
+
+Section:NewButton("Low Graphic No Gui 4", "Low Graphic", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8QZGBLW8"))()
+end)
+
+local Section = Tab:NewSection("Tool Giver")
+
+Section:NewButton("All Tool 【Noclip, Speed, Fling, Tptool】","Get all troops",function()
+loadstring(game:HttpGet("https://pastefy.app/ogsv5dAn/raw"))()
+end)
+
+Section:NewButton("Noclip Tool","Go throw walls",function()
+loadstring(game:HttpGet("https://pastefy.app/by83MUJ4/raw"))()
+end)
+
+Section:NewButton("Walk Tool","fast",function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Walk"
+tool.Activated:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Section:NewButton("Run Tool", "Run", function()
+loadstring(game:HttpGet("https://pastefy.app/t3mDKiMg/raw"))()
+end)
+
+Section:NewButton("Fling Tool","Fling anyone",function()
+loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
+end)
+
+Section:NewButton("TpTool","Teleport",function()
+loadstring(game:HttpGet("https://pastefy.app/Lhg31PG6/raw"))()
 end)
 
 Section:NewButton("ESP", "for look people", function()
@@ -189,6 +454,8 @@ Section:NewButton("Player hub v1", "Made by me", function()
 loadstring(game:HttpGet("https://pastefy.app/uhxuBBuA/raw"))()
 print("Clicked")	    
 end)
+
+local Section = Tab:NewSection("Local Player 【End】")
   	    
 local Tab = Window:NewTab("Fe scripts")
 local Section = Tab:NewSection("Fe scripts")
