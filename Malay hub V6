@@ -484,6 +484,56 @@ loadstring(game:HttpGet("https://rentry.co/projektembuspandang/raw"))();
 print("Clicked")
 end)
 
+local Section = Tab:NewSection("Time Day - Night")
+
+Section:NewSlider("Time", "Time", 2, 7, function(s)
+    game.Lighting.TimeOfDay = s
+end)
+
+Section:NewTextBox("Set Time 1 - 7", "Set Time", function(txt)
+    game.Lighting.TimeOfDay = txt
+end)
+
+Section:NewToggle("Day", "Day", function(state)
+    if state then
+        game.Lighting.TimeOfDay = 7
+    else
+        game.Lighting.TimeOfDay = 1
+    end
+end)
+
+Section:NewToggle("Night", "Night", function(state)
+    if state then
+        game.Lighting.TimeOfDay = 1
+    else
+        game.Lighting.TimeOfDay = 7
+    end
+end)
+
+local Section = Tab:NewSection("Message")
+
+Section:NewTextBox("Chat Your Message", "TextboxInfo", function(txt)
+ game.StarterGui:SetCore("ChatMakeSystemMessage",  { Text = txt, Color = Color3.fromRGB( 255,255,255 ), Font = Enum.Font.Arial } )
+end)
+
+local Section = Tab:NewSection("Reset Character")
+
+Section:NewTextBox("Set Health", "Makes Your Health 0 - 100 Th Did U Think It Would Do", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.Health = txt
+end)
+
+Section:NewButton("Reset [Health]", "Makes Your Health 0 Th Did U Think It Would Do", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+ 
+Section:NewButton("Reset [Humanoid]", "Kills Humanoid Th Did U Think It Would Do", function()
+    game.Players.LocalPlayer.Character.Humanoid:Destroy()
+end)
+
+Section:NewButton("Anti Fall Damage", "Anti Fall Damage", function()
+    game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+end)
+
 local Section = Tab:NewSection("For Graphic")
 
 Section:NewButton("Graphics Gui 1", "graficos tipo rtx", function()
