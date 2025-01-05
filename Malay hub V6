@@ -5,7 +5,7 @@ ss.Volume = 50
 ss.Looped = false
 ss.archivable = false
 ss.Parent = game.Workspace
-wait(2)
+wait(5)
 ss:play()
 
 local Water = Instance.new("ScreenGui")
@@ -36,7 +36,7 @@ Notification:Notify(
     {Title = " 🇲🇾Malay Hub V", Description = "Are You Ready?"},
     {OutlineColor = Color3.fromRGB(0, 0, 300),Time = 5, Type = "default"}
 )
-wait(2)
+wait(5)
 
 local s = Instance.new("Sound")
 s.Name = "Sound"
@@ -45,7 +45,7 @@ s.Volume = 50
 s.Looped = false
 s.archivable = false
 s.Parent = game.Workspace
-wait(2)
+wait(5)
 s:play()
 
 local colors = {
