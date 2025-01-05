@@ -177,31 +177,6 @@ Section:NewSlider("Gravity", "Gravity", 1000, 196, function(s)
     game.Workspace.Gravity = s
 end)
 
-Section:NewTextBox("Set Gravity", "Set Gravity ", function(txt)
-    game.Workspace.Gravity = txt
-end)
-
-Section:NewToggle("Gravity 120", "Gravity 120", function(state)
-    if state then
-        game.Workspace.Gravity = 120
-    else
-        game.Workspace.Gravity = 196
-    end
-end)
-
-Section:NewButton("Reset Gravity", "Reset Gravity", function()
-    game.Workspace.Gravity = 2
-print("Clicked")
-end)
-
-            if part:IsA("BasePart") then
-                part.CanCollide = false
-            end
-        end
-        game:GetService("RunService").Stepped:Wait()
-    end
-end)
-
 local xrayOn = false
 Section:NewToggle("Xray", "Toggle Xray", function(enabled)
     xrayOn = enabled
