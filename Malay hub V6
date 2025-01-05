@@ -114,6 +114,168 @@ loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))()
 print("Clicked")
 end)
 
+local Section = Tab:NewSection("WalkSpeed")
+
+Section:NewSlider("WalkSpeed", "WalkSpeed", 1000, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewTextBox("Set Walkspeed","Set WalkSpeed", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+Section:NewToggle("WalkSpeed 120", "WalkSpeed 120", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+Section:NewButton("Reset WalkSpeed", "Reset WalkSpeed", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+local Section = Tab:NewSection("JumpPower")
+
+Section:NewSlider("JumpPower", "JumpPower", 1000, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewTextBox("Set JumpPower","Set JumpPower", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+
+Section:NewToggle("JumpPower 120", "JumpPower 120", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+Section:NewButton("Reset JumpPower", "Reset JumpPower", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+local Section = Tab:NewSection("HipHeight")
+
+Section:NewSlider("HipHeight", "HipHeight", 1000, 2, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
+end)
+
+Section:NewTextBox("Set HipHeight", "Set HipHeight", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = txt
+end)
+
+Section:NewToggle("HipHeight 120", "HipHeight 120", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+    end
+end)
+
+Section:NewButton("Reset HipHeight", "Reset HipHeight", function()
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+end)
+
+local Section = Tab:NewSection("Gravity")
+
+Section:NewSlider("Gravity", "Gravity", 1000, 196, function(s)
+    game.Workspace.Gravity = s
+end)
+
+Section:NewTextBox("Set Gravity", "Set Gravity ", function(txt)
+    game.Workspace.Gravity = txt
+end)
+
+Section:NewToggle("Gravity 120", "Gravity 120", function(state)
+    if state then
+        game.Workspace.Gravity = 120
+    else
+        game.Workspace.Gravity = 196
+    end
+end)
+
+Section:NewButton("Reset Gravity", "Reset Gravity", function()
+    game.Workspace.Gravity = 2
+end)
+
+local Section = Tab:NewSection("Fov")
+
+Section:NewSlider("Fov", "Fov", 120, 80, function(s)
+    game.Workspace.CurrentCamera.FieldOfView = s
+end)
+
+Section:NewTextBox("Set Fov", "Set Fov", function(txt)
+    game.Workspace.CurrentCamera.FieldOfView = txt
+end)
+
+Section:NewToggle("Fov 120", "Fov 120", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
+
+Section:NewButton("Reset Fov", "Reset Fov", function()
+    game.Workspace.CurrentCamera.FieldOfView = 80
+end)
+
+local Section = Tab:NewSection("Tpwalk")
+
+Section:NewTextBox("Set Tpwalk","Increase speed",function(txt)
+function isNumber(str)
+  if tonumber(str) ~= nil or str == 'inf' then
+    return true
+  end
+end
+local tspeed = txt
+local hb = game:GetService("RunService").Heartbeat
+local tpwalking = true
+local player = game:GetService("Players")
+local lplr = player.LocalPlayer
+local chr = lplr.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+  if hum.MoveDirection.Magnitude > 0 then
+    if tspeed and isNumber(tspeed) then
+      chr:TranslateBy(hum.MoveDirection * tonumber(tspeed))
+    else
+      chr:TranslateBy(hum.MoveDirection)
+    end
+  end
+end
+end)
+
+Section:NewDropdown("Tpwalk 1", "yoo finally instead of inf yield", {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"}, function(currentOption)
+    function isNumber(str)
+  if tonumber(str) ~= nil or str == 'inf' then
+    return true
+  end
+end
+local tspeed = (currentOption)
+local hb = game:GetService("RunService").Heartbeat
+local tpwalking = true
+local player = game:GetService("Players")
+local lplr = player.LocalPlayer
+local chr = lplr.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+  if hum.MoveDirection.Magnitude > 0 then
+    if tspeed and isNumber(tspeed) then
+      chr:TranslateBy(hum.MoveDirection * tonumber(tspeed))
+    else
+      chr:TranslateBy(hum.MoveDirection)
+    end
+  end
+end
+end)
+
+Section:NewDropdown("Tpwalk 2", "yoo finally instead of inf yield", {"11", "12", "13", "14", "15", "16", "17", "18", "19", "20"}, function(currentOption)
+    function isNumber(str)
   if tonumber(str) ~= nil or str == 'inf' then
     return true
   end
