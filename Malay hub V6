@@ -114,6 +114,162 @@ loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))()
 print("Clicked")
 end)
 
+  if tonumber(str) ~= nil or str == 'inf' then
+    return true
+  end
+end
+local tspeed = (currentOption)
+local hb = game:GetService("RunService").Heartbeat
+local tpwalking = true
+local player = game:GetService("Players")
+local lplr = player.LocalPlayer
+local chr = lplr.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+while tpwalking and hb:Wait() and chr and hum and hum.Parent do
+  if hum.MoveDirection.Magnitude > 0 then
+    if tspeed and isNumber(tspeed) then
+      chr:TranslateBy(hum.MoveDirection * tonumber(tspeed))
+    else
+      chr:TranslateBy(hum.MoveDirection)
+    end
+  end
+end
+end)
+
+local Section = Tab:NewSection("View To Player Teleport To Player")
+
+Section:NewTextBox("View Player", "Can be shortened", function(txt)
+	local player = game.Players.LocalPlayer
+	for i, v in pairs(game.Players:GetChildren()) do
+		if (string.sub(string.lower(v.Name), 1, string.len(txt))) == string.lower(txt) then
+			txt = v.Name
+		end
+	end
+	if txt == "me" or txt == "unview" then
+		workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+	else
+		workspace.CurrentCamera.CameraSubject = game.Players[txt].Character.Humanoid
+	end
+end)
+
+Section:NewTextBox("Teleport Player", "Can be shortened", function(txt)
+    local player = game.Players.LocalPlayer
+    for i,v in pairs(game.Players:GetChildren()) do
+    if (string.sub(string.lower(v.Name),1,string.len(txt))) == string.lower(txt) then
+    txt = v.Name
+    end
+    end
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[txt].Character.Head.Position)
+end)
+
+players = {}
+ 
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+   table.insert(players,v.Name)
+end
+ 
+Section:NewDropdown("Select Player", "Select Player", players, function(abc)
+    Select = abc
+end)
+
+Section:NewButton("Teleport", "Teleport", function()
+    loadstring(game:HttpGet("https://pastefy.app/TOaVpBZt/raw"))()
+end)
+
+local Section = Tab:NewSection("Toggle")
+local Section = Tab:NewSection("Infinite Jump-Noclip-Gravity")
+local Section = Tab:NewSection("Xray -Bunny Hop-Fullbright-Sit")
+
+local InfiniteJumpEnabled;
+Section:NewToggle("Infinite Jump", "Toggle Infinite Jump", function(State)
+    InfiniteJumpEnabled = State
+end)
+
+local Player = game:GetService("Players").LocalPlayer
+game:GetService("UserInputService").JumpRequest:Connect(function()
+     if InfiniteJumpEnabled then
+         Player.Character:WaitForChild("Humanoid"):ChangeState("Jumping")
+     end
+end)
+
+local isNoClipEnabled = false
+Section:NewToggle("Noclip", "Toggle Noclip", function(enabled)
+    isNoClipEnabled = enabled
+    local character = game.Players.LocalPlayer.Character
+
+    while isNoClipEnabled do
+        for _, part in pairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = false
+            end
+        end
+        game:GetService("RunService").Stepped:Wait()
+    end
+end)
+
+local xrayOn = false
+Section:NewToggle("Xray", "Toggle Xray", function(enabled)
+    xrayOn = enabled
+
+    if xrayOn then
+        for _, descendant in pairs(workspace:GetDescendants()) do
+            if descendant:IsA("BasePart") then
+                if not descendant:FindFirstChild("OriginalTransparency") then
+                    local originalTransparency = Instance.new("NumberValue")
+                    originalTransparency.Name = "OriginalTransparency"
+                    originalTransparency.Value = descendant.Transparency
+                    originalTransparency.Parent = descendant
+                end
+                descendant.Transparency = 0.5
+            end
+        end
+    else
+        for _, descendant in pairs(workspace:GetDescendants()) do
+            if descendant:IsA("BasePart") then
+                if descendant:FindFirstChild("OriginalTransparency") then
+                    descendant.Transparency = descendant.OriginalTransparency.Value
+                    descendant.OriginalTransparency:Destroy()
+                end
+            end
+        end
+    end
+end)
+
+local J = false;
+Section:NewToggle("Bunny Hop","?",function(K)
+J = K;
+spawn(function()
+while wait()
+and J do game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+end)
+
+Section:NewToggle("Gravity", "Toggle Gravity", function(state)
+    if state then
+        game.Workspace.Gravity = 30
+    else
+        game.Workspace.Gravity = 196
+    end
+end)
+
+Section:NewToggle("FullBright", "Toggle Fullbright", function(state)
+    if state then
+        loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+    else
+        loadstring(game:HttpGet(('https://pastebin.com/raw/06iG6YkU'),true))()
+    end
+end)
+
+Section:NewToggle("Sit", "Toggle Sit", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.Sit = true
+    else
+        game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    end
+end)
+
 local Section = Tab:NewSection("Visual")
 
 Section:NewButton("Esp 【Name】", "Esp Name Player", function()
