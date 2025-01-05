@@ -850,7 +850,7 @@ Section:NewButton("Multi-Scripter-X","Hub",function()  loadstring(game:HttpGet("
 print("Clicked")
 end)
 
-local Tab = Window:NewTab("Executor [In update...]") local Section = Tab:NewSection("Need help? Contact @REYVINGS") 
+local Tab = Window:NewTab("Executor [Some executor don't work]") local Section = Tab:NewSection("Need help? Contact @REYVINGS") 
 
 Section:NewButton("Krnl remake", "executor", function()loadstring(game:HttpGet("https://raw.githubusercontent.com/wtfplayer/redemption/main/krnlnoui.lua"))() print("Clicked") end)
 Section:NewButton("Nathan's Executor", "ButtonInfo", function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Makeruwu/Scfipg/main/Executor2%2C3'))() print("Clicked") end)
