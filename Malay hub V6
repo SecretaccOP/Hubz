@@ -1048,7 +1048,6 @@ Section:NewButton("Freeze Mode", "Gives you tools to freeze yourself just tap", 
 loadstring(game:HttpGet('https://pastebin.com/raw/AkJS0PC7'))()
 end)
   	    
-local Tab = Window:NewTab("Fe scripts")
 local Section = Tab:NewSection("Fe scripts")
 
 Section:NewButton("Crawl script", "Fe scripts", function()
@@ -1629,34 +1628,6 @@ loadstring(game:HttpGet('https://pastebin.com/raw/H5yx10Jq'))()
 print("Clicked")
 end)
 
-local Tab = Window:NewTab("Admin Scripts")
-local Section = Tab:NewSection("Admin scripts")
-
-Section:NewButton("infinite yield", "Admin Scripts", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-print("Clicked")
-end)
-
-Section:NewButton(" Nameless admin", "Admin Scripts", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
-print("Clicked")
-end)
-
-Section:NewButton("Fate's admin", "Admin Scripts", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
-print("Clicked")
-end)
-
-Section:NewButton("CMD-X admin", "Admin Scripts", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-print("Clicked")
-end)
-
-Section:NewButton("Leg admin", "Admin Scripts", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
-print("Clicked")
-end)
-
 local Tab = Window:NewTab("Hub")
 local Section = Tab:NewSection("Hub")
 
@@ -1706,6 +1677,154 @@ end)
 
 Section:NewButton("Multi-Scripter-X","Hub",function()  loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
 print("Clicked")
+end)
+
+Section:NewButton("Ree Universal Script Hub", "Uh idk.", function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/Scripts/main/REE%20CONSOLE%20RAIDER%20FIXED", true))()
+end)
+
+Section:NewButton("AkilBlox14 Hub V1", "New Hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AkilExploitz/AkilBlox14-s-Script-Hub-v1.1/6f5129c89dffb81157ed1668154bf373ce1ca51c/Pastebin%20Sucks'))()
+end)
+
+Section:NewButton("Mocha Hub", "Fresh Blood And Tears", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/m0bwSpXD"))();
+end)
+
+Section:NewButton("LegonX Hub", "New and Op", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/Lmaz8vF7'),true))();
+end)
+
+Section:NewButton("GameHub V6.1","?",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TakeModzz/Games-Hub-Script/main/Games%20Hub%20(Always%20updated)"))()
+end)
+
+Section:NewButton("Universal Hub V2.1", "Universal hub v2.1", function()
+loadstring(game:HttpGet("https://pastefy.app/Mo50uvza/raw"))()
+end)
+
+Section:NewButton("Mobile Hub", "The Best Hub", function()
+loadstring(game:HttpGet("https://shz.al/~mobile-hub"))() 
+end)
+
+Section:NewButton("Lollypop Hub | V5.6", "Lollypop Hub | V5.6", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rrixh/lollypophub/main/lollypophubV5.6",true))() 
+end)
+
+Section:NewButton("Cosmos Hub", "Cosmos Hub", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/tFivBbmb"))(); 
+end)
+
+Section:NewButton("Parvus Hub", "Parvus Hub", function()
+loadstring(game:HttpGet("https://pastefy.app/mFCCQFb7/raw"))()
+end)
+
+Section:NewButton("Thunder Hub", "Thunder Hub", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/DFjY4nMy'))() 
+end)
+
+Section:NewButton("Key System Hub", "?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingResources/GamingResources-Script-Hub/main/Key%20System", true))()
+end)
+
+Section:NewButton("Noob Hub", "Noob Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/danixbo/NoobHub/main/NoobHub')))()  
+end)
+
+Section:NewButton("ShadowSphere Hub", "ShadowSphere Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowSphereBetaV1/ShadowSphere/main/README.md"))() 
+end)
+
+Section:NewButton("Domanic Hub", "Domanic Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Boom/main/Protected_1198219713372149.lua.txt",true))() 
+end)
+
+Section:NewButton("Canlin Inc Hub", "Carlin In Hub", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/dN2gqq8B'),true))() 
+end)
+
+Section:NewButton("C9 Hub", "C9 Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MariyaFurmanova/Library/main/un_C9HUB2", true))() 
+end)
+
+Section:NewButton("Solaris Hub X V1", "Solaris Hub X V1", function()
+loadstring(game:HttpGet("https://pastefy.app/zYWUnIZn/raw"))() 
+end)
+
+Section:NewButton("Ungair Hub", "Unfair Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))() 
+end)
+
+Section:NewButton("Masta Hub", "Masta Hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MastersMZ-Scripts/MastaHub/main/Loader.lua'))() 
+end)
+
+Section:NewButton("Tuber's Hubb|Version 1.0", "Tuber's Hubb|Version 1.0", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6qTNeSRR"))(); 
+end)
+
+Section:NewButton("MrPectable Hub", "MrPectable Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrPectable/MrPectable/main/MrPectable.lua"))() 
+end)
+
+Section:NewButton("Game Hub Scripts V3", "Game Hub Scripts V3", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/18ji1xzk"))(); 
+end)
+
+Section:NewButton("Hawk Hub", "Hawk Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/Hawk/main/Loader", true))() 
+end)
+
+Section:NewButton("HarshTech V7.5 Pc Hub", "HarshTech V7.5 Pc Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/Loadstring/main/HarshTech7.5-Pc.lua"))()
+end)
+
+Section:NewButton("HarshTech V7.6 Hub", "HarshTech V7.6 Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YellowGreg/HarshTechV7.6/main/main.lua"))()
+end)
+
+Section:NewButton("Version Hub | V2.3.1", "Version Hub | V2.3.1", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterGamerBobux/VersionHub/main/V2.3.1.lua.txt",true))() 
+end)
+
+Section:NewButton("Trenc War V2 Hub", "Trenc War V2 Hub", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Trench-War-OP-9936", true))() 
+end)
+
+Section:NewButton("Plenum Hub", "Best", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Plenum-Hub/main/loader"))()
+end)
+
+Section:NewButton("Bido Skins Hub V1.2", "Bido Skins V1.2", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20SkinsV1.2"))()
+end)
+
+Section:NewButton("Bido Skins Hub V1.3", "?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20Skins%20V1.3"))()
+end)
+
+Section:NewButton("Bido Skins Hub V1.5", "?", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20SkinsV1.5"))()
+end)
+
+Section:NewButton("Bido Skins Hub V1.8", "Bido skins", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20Skins%20V1.8"))()
+end)
+
+Section:NewButton("Butif Hub", "Butif Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NEWBUTIF/Universal-Script-Hub/main/Butif%20Hub"))() 
+end)
+
+Section:NewButton("Alwi Hub V1.1", "Alwi Hub V1.1", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/Alwi-hub-universal-V.1"))() 
+end)
+
+Section:NewButton("Trolling Bluez Hub", "V1", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hbNFKuSh"))()
+end)
+
+Section:NewButton("Bluez Hub", "V1", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ukiTbkFD"))()
 end)
 
 local Tab = Window:NewTab("Executor") local Section = Tab:NewSection("Some executor don't work") 
