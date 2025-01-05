@@ -45,7 +45,7 @@ s.Volume = 50
 s.Looped = false
 s.archivable = false
 s.Parent = game.Workspace
-wait(5)
+wait(2)
 s:play()
 
 local colors = {
@@ -122,6 +122,7 @@ end)
 
 Section:NewButton("Reset WalkSpeed", "Reset WalkSpeed", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("JumpPower")
@@ -144,6 +145,7 @@ end)
 
 Section:NewButton("Reset JumpPower", "Reset JumpPower", function()
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("HipHeight")
@@ -166,6 +168,7 @@ end)
 
 Section:NewButton("Reset HipHeight", "Reset HipHeight", function()
     game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("Gravity")
@@ -188,6 +191,7 @@ end)
 
 Section:NewButton("Reset Gravity", "Reset Gravity", function()
     game.Workspace.Gravity = 2
+print("Clicked")
 end)
 
             if part:IsA("BasePart") then
@@ -232,8 +236,7 @@ J = K;
 spawn(function()
 while wait()
 and J do game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
-end
-end)
+  end
 end)
 
 Section:NewToggle("Gravity", "Toggle Gravity", function(state)
@@ -264,34 +267,42 @@ local Section = Tab:NewSection("Visual")
 
 Section:NewButton("Esp 【Name】", "Esp Name Player", function()
 loadstring(game:HttpGet("https://pastefy.app/RWp9KiKS/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Esp【Cham】", "Esp Cham Player", function()
 oadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-credit/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%202%E3%80%91"))()
+print("Clicked")
 end)
 
 Section:NewButton("Esp 【Box】", "Esp Box Player", function()
 loadstring(game:HttpGet("https://pastefy.app/n0Q30kVc/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Esp【Tracer】", "Tracer Player", function()
 loadstring(game:HttpGet("https://pastefy.app/xY7X7V5y/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Map【Remover Texture】", "Remover Texture", function()
 loadstring(game:HttpGet("https://pastefy.app/SA3cYmh2/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Headshot【Aimbot】", "Aimbot Player", function()
 loadstring(game:HttpGet("https://pastefy.app/nWXJejNH/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Head Fit【Silent Aim】", "Silent Aim Player", function()
 loadstring(game:HttpGet("https://pastefy.app/FjnHzzX0/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Headshot Camera【Fov Aimbot】", "Fov Aimbot Player", function()
 loadstring(game:HttpGet("https://pastefy.app/720YG859/raw"))()
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("Time Day - Night")
@@ -334,42 +345,51 @@ end)
 
 Section:NewButton("Reset [Health]", "Makes Your Health 0 Th Did U Think It Would Do", function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
+print("Clicked")
 end)
  
 Section:NewButton("Reset [Humanoid]", "Kills Humanoid Th Did U Think It Would Do", function()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
+print("Clicked")
 end)
 
 Section:NewButton("Anti Fall Damage", "Anti Fall Damage", function()
     game.Players.LocalPlayer.Character.FallDamageScript:Destroy()
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("For Graphic")
 
 Section:NewButton("Graphics Gui 1", "graficos tipo rtx", function()
 loadstring(game:HttpGet("https://pastefy.app/xXkUxA0P/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Graphics Gui 2", "rtx gui 3", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/enhancer.txt"))()
+print("Clicked")
 end)
 
 Section:NewButton("Low Graphics No Gui 3", "rtx gui 2", function()
 loadstring(game:HttpGet("https://pastefy.app/BIr8OzrR/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Low Graphic No Gui 4", "Low Graphic", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/8QZGBLW8"))()
+print("Clicked")
 end)
 
 local Section = Tab:NewSection("Tool Giver")
 
 Section:NewButton("All Tool 【Noclip, Speed, Fling, Tptool】","Get all troops",function()
 loadstring(game:HttpGet("https://pastefy.app/ogsv5dAn/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Noclip Tool","Go throw walls",function()
 loadstring(game:HttpGet("https://pastefy.app/by83MUJ4/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Walk Tool","fast",function()
@@ -381,18 +401,22 @@ tool.Activated:connect(function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
+print("Clicked")
 end)
 
 Section:NewButton("Run Tool", "Run", function()
 loadstring(game:HttpGet("https://pastefy.app/t3mDKiMg/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("Fling Tool","Fling anyone",function()
 loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
+print("Clicked")
 end)
 
 Section:NewButton("TpTool","Teleport",function()
 loadstring(game:HttpGet("https://pastefy.app/Lhg31PG6/raw"))()
+print("Clicked")
 end)
 
 Section:NewButton("ESP", "for look people", function()
