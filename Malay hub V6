@@ -1,3 +1,53 @@
+local ss = Instance.new("Sound")
+ss.Name = "Sound"
+ss.SoundId = "http://www.roblox.com/asset/?id=3320590485"
+ss.Volume = 50
+ss.Looped = false
+ss.archivable = false
+ss.Parent = game.Workspace
+wait(5)
+ss:play()
+
+local Water = Instance.new("ScreenGui")
+		local TextLabel = Instance.new("TextLabel")
+		local UIGradient = Instance.new("UIGradient")
+    Water.Name = game:GetService("HttpService"):GenerateGUID(true)
+		Water.Parent = (game:GetService("CoreGui") or gethui())
+		Water.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		TextLabel.Parent = Water
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Position = UDim2.new(0.00658436213, 0, 0, 0)-UDim2.new(0,0,1,0)
+		TextLabel.Size = UDim2.new(0, 200, 0, 32)
+		TextLabel.Font = Enum.Font.Cartoon
+		TextLabel.Text = "🇲🇾Malay Hub V"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextScaled = true
+		TextLabel.TextSize = 11.000
+		TextLabel.TextWrapped = true
+		TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel:TweenPosition(UDim2.new(0.00658436213, 0, 0, 0),"Out","Quart",1)
+    UIGradient.Color =ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(196, 8, 202)), ColorSequenceKeypoint.new(0.13, Color3.fromRGB(199, 15, 191)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(247, 127, 28)), ColorSequenceKeypoint.new(0.89, Color3.fromRGB(254, 7, 59)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 2, 61))}
+
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+Notification:Notify(
+    {Title = " 🇲🇾Malay Hub V", Description = "Are You Ready?"},
+    {OutlineColor = Color3.fromRGB(0, 0, 300),Time = 5, Type = "default"}
+)
+wait(5)
+
+local s = Instance.new("Sound")
+s.Name = "Sound"
+s.SoundId = "http://www.roblox.com/asset/?id=9125485916"
+s.Volume = 50
+s.Looped = false
+s.archivable = false
+s.Parent = game.Workspace
+wait(5)
+s:play()
+
 local colors = {
     SchemeColor = Color3.fromRGB(255, 255, 0),
     Background = Color3.fromRGB(0, 0, 0),
