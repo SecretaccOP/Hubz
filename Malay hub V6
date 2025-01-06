@@ -40,7 +40,7 @@ wait(5)
 
 local s = Instance.new("Sound")
 s.Name = "Sound"
-s.SoundId = "http://www.roblox.com/asset/?id=9125485916"
+s.SoundId = "http://www.roblox.com/asset/?id=18423779505"
 s.Volume = 50
 s.Looped = false
 s.archivable = false
