@@ -2506,11 +2506,20 @@ local Section = Tab:NewSection("Scriptblox name:DenxOP")
 Tab:NewSection("Hope you enjoy ðŸ˜Š")
 Tab:NewSection("And no one help me to do (>︿<｡)")
 
-local Tab = Window:NewTab("Showcase")
-Tab:NewSection("if you showcase My Script in Youtube. I will write your name here")
-Tab:NewSection("Showcase: KrakenofficialYT")
-Tab:NewSection("Showcase: DARKKING")
-Tab:NewSection("Showcase: Yasuf showcase")
+local Tab = Window:NewTab("【Setting】")
+local Section = Tab:NewSection("Ui Color Changer")
+ 
+for _, theme, color in ipairs(themes) do
+    Section:NewColorPicker(theme, "Change your " .. theme, colors[theme], function(color)
+        colors[theme] = color
+    end)
+end
+ 
+local Section = Tab:NewSection("Keybind")
+ 
+Section:NewKeybind("Keybind", "Keybind F To Open/Close", Enum.KeyCode.F, function()
+	Library:ToggleUI(F)
+end)
 
 --Toggle
 local ToggleGui = Instance.new("ScreenGui")
