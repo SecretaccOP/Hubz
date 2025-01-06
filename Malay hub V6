@@ -77,7 +77,7 @@ local plrage = plr.AccountAge
 local plrcount = #plrs:GetPlayers()
 
 -- Home
-local Tab = Window:NewTab("Home")
+local Tab = Window:NewTab("Home/credit")
 local Section1 = Tab:NewSection("Welcome: " .. plrname .. " To: Malay hub ")
 local Section2 = Tab:NewSection("Game Name: " .. GameName)
 local Section3 = Tab:NewSection("Game Id: " .. GameId)
@@ -85,6 +85,15 @@ local Section4 = Tab:NewSection("Name: " .. plrname)
 local Section5 = Tab:NewSection("Display Name: " .. plr.DisplayName)
 local Section6 = Tab:NewSection("Player Id: " .. plrid)
 local Section7 = Tab:NewSection("Account Age: " .. plrage)
+
+local Section = Tab:NewSection("Credit | Creator")
+ 
+local oldList = {
+    "Creator Made By:DenXOP:Scriptblox"
+  }
+ 
+local dropdown = Section:NewDropdown("Credit | Creator","Info", oldList, function()
+end)
 
 local Tab = Window:NewTab("Local Player")
 local Section = Tab:NewSection("Useful Stuff")
@@ -2503,13 +2512,6 @@ Section:NewButton("Game hub v1", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastefy.app/2aaFWViC/raw"))()
 print("Clicked")	    
 end)
-
-local Tab = Window:NewTab("Support")
-local Section = Tab:NewSection("@REYVINGS")
-local Section = Tab:NewSection("Discord name:scriptx")
-local Section = Tab:NewSection("Scriptblox name:DenxOP")
-Tab:NewSection("Hope you enjoy ðŸ˜Š")
-Tab:NewSection("And no one help me to do (>︿<｡)")
 
 local Tab = Window:NewTab("【Setting】")
 local Section = Tab:NewSection("Ui Color Changer")
