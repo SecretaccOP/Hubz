@@ -68,7 +68,6 @@ local themes = {
 
 local GameId = game.PlaceId
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(GameId).Name
-
 local plrs = game:GetService("Players")
 local plr = plrs.LocalPlayer
 local plrname = plr.Name
