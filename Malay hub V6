@@ -2513,7 +2513,7 @@ loadstring(game:HttpGet("https://pastefy.app/2aaFWViC/raw"))()
 print("Clicked")	    
 end)
 
-local Tab = Window:NewTab("【Setting】")
+local Tab = Window:NewTab("Setting")
 local Section = Tab:NewSection("Ui Color Changer")
  
 for _, theme, color in ipairs(themes) do
@@ -2566,6 +2566,12 @@ end)
  
 Section:NewButton("Server Lag/Crasher 3", "Server Lag/Crash 3", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/d44df016fe28bc8d5974/things/main/robloxianwaterpark'))()
+end)
+
+local Tab = Window:NewTab("New feature!")
+
+Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
+	print(txt)
 end)
 
 local ScreenGui = Instance.new("ScreenGui")
