@@ -2569,9 +2569,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/d44df016fe28bc8d5974/
 end)
 
 local Tab = Window:NewTab("New feature!")
+local Section = Tab:NewSection("New feature!")
 
-Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
-	print(txt)
+Section:NewTextBox("TextboxText", "TextboxInfo", function(val)
+	I = val
 end)
 
 local ScreenGui = Instance.new("ScreenGui")
