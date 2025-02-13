@@ -1,3 +1,12 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))()
 local Window = Library.CreateLib("[CITYSCAPE] MADE BY DENXOP", "DarkTheme")
 local Tab = Window:NewTab("Money")
+local Section = Tab:NewSection("Get money")
+Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
+    local args = {
+    [1] = (txt) 
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("CashUpdatedEvent"):FireServer(unpack(args))
+
+end)
