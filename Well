@@ -1,6 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))()
 local Window = Library.CreateLib("[My airport 2] MADE BY DENXOP", "DarkTheme")
 
+local Tab = Window:NewTab("Info")
+local Section = Tab:NewSection("Some executor don't work for this script.")
+local Section = Tab:NewSection("And thanks for use my script:)")
 local Tab = Window:NewTab("Money")
 local Section = Tab:NewSection("Get money")
 Section:NewButton("Get 1B Money", "1B money", function()
