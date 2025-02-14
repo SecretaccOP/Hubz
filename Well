@@ -12,9 +12,9 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Cash")
 
 end)
 
-local Tab = Window:NewTab("per")
-local Section = Tab:NewSection("pe")
-Section:NewButton("Get 10K per", "10K pe", function()
+local Tab = Window:NewTab("passenger")
+local Section = Tab:NewSection("passenger")
+Section:NewButton("Get 10K passenger", "you can check at leaderboard", function()
     local args = {
     [1] = 10000
 }
