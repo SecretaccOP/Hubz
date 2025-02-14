@@ -1,0 +1,24 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))()
+local Window = Library.CreateLib("[My airport 2] MADE BY DENXOP", "DarkTheme")
+
+local Tab = Window:NewTab("Money")
+local Section = Tab:NewSection("Get money")
+Section:NewButton("Get 1B Money", "1B money", function()
+    local args = {
+    [1] = -1000000000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Cash"):WaitForChild("Event"):WaitForChild("RemoveCash"):FireServer(unpack(args))
+
+end)
+
+local Tab = Window:NewTab("per")
+local Section = Tab:NewSection("pe")
+Section:NewButton("Get 10K per", "10K pe", function()
+    local args = {
+    [1] = 10000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Cash"):WaitForChild("Event"):WaitForChild("AddTotPassanger"):FireServer(unpack(args))
+
+end)
