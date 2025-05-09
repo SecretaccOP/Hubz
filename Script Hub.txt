@@ -48,7 +48,7 @@ s.Parent = game.Workspace
 wait(5)
 s:play()
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion"))();
 local colors = {
     SchemeColor = Color3.fromRGB(10,30,255),
     Background = Color3.fromRGB(0, 0, 10),
