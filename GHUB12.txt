@@ -1,9 +1,6 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 game:GetService("StarterGui"):SetCore("SendNotification",{
-Title = "hello hub",
-Text = "SUBSCRIBE TO MY CHANNEL", 
+Title = "COPYRIGHT SCRIPT",
+Text = "MADE IN CHINA", 
 })
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SecretaccOP/Hubz/refs/heads/main/uilib.lua.txt"))();
@@ -23,39 +20,6 @@ local themes = {
     "TextColor",
     "ElementColor"
 }
-
-local ToggleGui = Instance.new("ScreenGui")
-local Toggle = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-
---Properties:
-
-local ToggleGui = Instance.new("ScreenGui")
-local Toggle = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-
-ToggleGui.Name = "ToggleGui_HE"
-ToggleGui.Parent = game.CoreGui
-
-Toggle.Name = "Toggle"
-Toggle.Parent = ToggleGui
-Toggle.BackgroundColor3 = Color3.fromRGB(100, 0, 255)
-Toggle.Position = UDim2.new(0, 0, 0.427710831, 0)
-Toggle.Size = UDim2.new(0, 81, 0, 36)
-Toggle.Font = Enum.Font.SourceSans
-Toggle.Text = "Toggle"
-Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-Toggle.TextSize = 20.000
-Toggle.TextWrapped = true
-Toggle.Active = true
-Toggle.Draggable = true
-Toggle.MouseButton1Click:connect(function()
-    Library:ToggleUI()
-end)
-
-UICorner.Parent = Toggle
-
---
 
 local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local gameid = game.PlaceId
