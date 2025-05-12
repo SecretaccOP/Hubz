@@ -1354,31 +1354,33 @@ Section:NewButton("SUBSCRIBE TO Gamerscripter YOUTUBE", "VISIT", function()
     setclipboard("https://youtube.com/@GamerScripter")
 end)
 
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "ScreenGui"
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ResetOnSpawn = false
-
+local ToggleGui = Instance.new("ScreenGui")
 local Toggle = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+local ToggleGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+ToggleGui.Name = "ToggleGui_HE"
+ToggleGui.Parent = game.CoreGui
+
 Toggle.Name = "Toggle"
-Toggle.Parent = ScreenGui
-Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Toggle.Position = UDim2.new(0.474178404, 0, 0.0194986071, 0)
-Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Parent = ToggleGui
+Toggle.BackgroundColor3 = Color3.fromRGB(100, 0, 255)
+Toggle.Position = UDim2.new(0, 0, 0.427710831, 0)
+Toggle.Size = UDim2.new(0, 81, 0, 36)
 Toggle.Font = Enum.Font.SourceSans
-Toggle.Text = "Close"
-Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
-Toggle.TextSize = 28.000
+Toggle.Text = "Toggle"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 20.000
+Toggle.TextWrapped = true
+Toggle.Active = true
 Toggle.Draggable = true
-Toggle.MouseButton1Click:Connect(function()
-    if Toggle.Text == "Close" then
-        Toggle.Text = "Open"
-    else
-        Toggle.Text = "Close"
-    end
+Toggle.MouseButton1Click:connect(function()
     Library:ToggleUI()
 end)
 
-local Corner = Instance.new("UICorner")
-Corner.Name = "Corner"
-Corner.Parent = Toggle
+UICorner.Parent = Toggle
