@@ -16,3 +16,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("TaskCompleted"):FireServer(un
 
     wait()
 end
+
+Motel simulator-
+local args = {
+	999999999999999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("GiveCash"):FireServer(unpack(args))
+
