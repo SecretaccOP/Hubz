@@ -1,0 +1,18 @@
+Beach Tycoon-
+local args = {
+	9999,
+	"2"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
+
+Bank tycoon-
+_G.enabled = true
+ 
+while _G.enabled == true do
+    local args = {
+	"AddAccount"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("TaskCompleted"):FireServer(unpack(args))
+
+    wait()
+end
