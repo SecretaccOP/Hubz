@@ -26,3 +26,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("GiveCash"):FireServer(unpack(
 Apocalypse Tycoon- 
 
 game:GetService("ReplicatedStorage").Knit.Services.RaidService.RF.GiveReward:InvokeServer(math.huge)
+
+Heist tycoon-
+
+game:GetService("RunService").Heartbeat:Connect(function()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.TycoonService.RF.PayIncome:InvokeServer(unpack(args))
+end) 
