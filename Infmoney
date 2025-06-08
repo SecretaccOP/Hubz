@@ -36,3 +36,17 @@ local args = {
 
 game:GetService("ReplicatedStorage").Knit.Services.TycoonService.RF.PayIncome:InvokeServer(unpack(args))
 end) 
+
+Knockout simulator-
+
+Power-
+local args = {
+	9999999999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Train"):FireServer(unpack(args))
+
+Win-
+local args = {
+	9999999999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("WinGain"):FireServer(unpack(args))
