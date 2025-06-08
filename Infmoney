@@ -23,3 +23,6 @@ local args = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("GiveCash"):FireServer(unpack(args))
 
+Apocalypse Tycoon- 
+
+game:GetService("ReplicatedStorage").Knit.Services.RaidService.RF.GiveReward:InvokeServer(math.huge)
