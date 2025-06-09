@@ -1,7 +1,7 @@
 Beach Tycoon-
 local args = {
 	9999,
-	"2"
+	"1"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
 
@@ -55,6 +55,14 @@ Neighborhood tycoon-
 
 local args = {
 	999999,
+	"1"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
+
+House party tycoon-
+
+local args = {
+	9999,
 	"1"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
