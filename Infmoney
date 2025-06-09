@@ -66,3 +66,10 @@ local args = {
 	"1"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
+
+My hotel tycoon-
+
+local args = {
+	-9999
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Cash"):WaitForChild("Event"):WaitForChild("RemoveCash"):FireServer(unpack(args))
