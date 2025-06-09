@@ -50,3 +50,11 @@ local args = {
 	9999999999
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("WinGain"):FireServer(unpack(args))
+
+Neighborhood tycoon-
+
+local args = {
+	999999,
+	"1"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("E"):WaitForChild("UE"):FireServer(unpack(args))
