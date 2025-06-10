@@ -73,3 +73,11 @@ local args = {
 	-9999
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("Cash"):WaitForChild("Event"):WaitForChild("RemoveCash"):FireServer(unpack(args))
+
+Mega luxury jet tycoon-
+
+local args = {
+	"ywreuijfoweuy7823478'daikaw3052",
+	10000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("AddMoney"):FireServer(unpack(args))
