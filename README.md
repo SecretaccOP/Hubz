@@ -1,9 +1,11 @@
-2. Tanah tinggi yang terdiri daripada banjaran gunung merupakan gunung lipat tua.
+1. Tanah tinggi di Sabah dan Sarawak terletak di pedalamanınya.
 
-3. Banjaran terpanjang di Semenanjung Malaysia ialah Banjaran Titiwangsa, Banjaran ini tinggi di utara dan semakin rendah ke selatan.
+2. Di Sabah terdapat Banjaran Crocker, Banjaran Trus Madi, dan Banjaran Brassey.
 
-4. Banjaran Titiwangsa atau dikenal sebagai Banjaran Besar merupakan tulang belakang Semenanjung Malaysia. Kemuncak tertinggi di Banjaran Titiwangsa ialah Gunung Korbu.
+3. Terdapat gunung yang tertinggi di Malaysia, iaitu Gunung Kinabalu.
 
-5. Di Banjaran Tahan, terdapat kemuncak tertinggi, iaitu Gunung Tahan.
+4. Di Sarawak, terdapat Banjaran Tama Abu, Banjaran Pergunungan Iran, Pergunungan Hose, dan Banjaran Kapuas Hulu.
 
-6. Di Banjaran Bintang, kemuncak tertingginya ialah Gunung Bintang.
+5. Di Banjaran Tama Abu pula terdapat kemuncak Gunung Murud.
+
+6. Banjaran Pergunungan Iran dan Banjaran Kapuas Hulu terletak di sepanjang sempadan Kalimantan-Sarawak.
