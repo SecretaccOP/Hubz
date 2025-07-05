@@ -96,3 +96,20 @@ game:GetService("ReplicatedStorage").RemoteEvent.CommonServerEvent:FireServer(un
 
    end
 end)
+
+Bunker Life Tycoon- 
+
+local args = {
+    [1] = {
+        [1] = "Claim",
+        [2] = "",
+        [3] = "Cash",
+        [4] = 7
+    }
+}
+
+game:GetService("ReplicatedStorage").TimeGiveInRemote:FireServer(unpack(args))
+
+EoRond suspension test- 
+
+game:GetService("ReplicatedStorage").GiveEXPDriving:FireServer()
