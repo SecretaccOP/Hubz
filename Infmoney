@@ -81,3 +81,18 @@ local args = {
 	10000
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("AddMoney"):FireServer(unpack(args))
+
+Game creator tycoon-
+
+_G.toggle = true --true is on | false is off
+
+pcall(function()
+   while _G.toggle do wait()
+local args = {
+    [1] = "RCS_GuildTalkEnd"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent.CommonServerEvent:FireServer(unpack(args))
+
+   end
+end)
